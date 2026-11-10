@@ -1,0 +1,78 @@
+{
+  "excluded_terms": [
+    "condition aggravated",
+    "drug ineffective",
+    "migraine",
+    "migraine aggravated",
+    "pain aggravated",
+    "therapeutic response decreased",
+    "treatment failure"
+  ],
+  "merged_terms": {
+    "ptosis": "ptosis (any)",
+    "eyelid ptosis": "ptosis (any)",
+    "eyebrow ptosis": "ptosis (any)",
+    "brow ptosis": "ptosis (any)",
+    "regurgitation": "reflux or regurgitation",
+    "gastroesophageal reflux disease": "reflux or regurgitation",
+    "gastrooesophageal reflux disease": "reflux or regurgitation"
+  },
+  "variants": [
+    {
+      "variant": "baseline",
+      "n_records": 33527,
+      "n_medical": 20811,
+      "n_cosmetic": 12716,
+      "prevalence_difference": -0.027864533252121904,
+      "prevalence_ci_low": -0.03837070955528875,
+      "prevalence_ci_high": -0.017388562782166758,
+      "prevalence_p": 1.7179646669653436e-07,
+      "jsd_common_terms": 0.37225243489453386,
+      "jsd_terms": 221,
+      "jsd_p": 9.999000099990002e-05,
+      "jsd_permutations": 10000
+    },
+    {
+      "variant": "author_dedup",
+      "n_records": 23110,
+      "n_medical": 13512,
+      "n_cosmetic": 9598,
+      "prevalence_difference": -0.01485324305895086,
+      "prevalence_ci_low": -0.027189210291462422,
+      "prevalence_ci_high": -0.002552447993478516,
+      "prevalence_p": 0.01792172496157261,
+      "jsd_common_terms": 0.3593618484585762,
+      "jsd_terms": 174,
+      "jsd_p": 9.999000099990002e-05,
+      "jsd_permutations": 10000
+    },
+    {
+      "variant": "no_noburp",
+      "n_records": 30930,
+      "n_medical": 18223,
+      "n_cosmetic": 12707,
+      "prevalence_difference": -0.08135898074233233,
+      "prevalence_ci_low": -0.09192072060639282,
+      "prevalence_ci_high": -0.07080735025189591,
+      "prevalence_p": 2.06740618540234e-52,
+      "jsd_common_terms": 0.27263694805667893,
+      "jsd_terms": 191,
+      "jsd_p": 9.999000099990002e-05,
+      "jsd_permutations": 10000
+    },
+    {
+      "variant": "term_validity",
+      "n_records": 33527,
+      "n_medical": 20811,
+      "n_cosmetic": 12716,
+      "prevalence_difference": -0.03854459756889583,
+      "prevalence_ci_low": -0.04899255819411724,
+      "prevalence_ci_high": -0.028125770469053697,
+      "prevalence_p": 3.2236131343537497e-13,
+      "jsd_common_terms": 0.36498464622031135,
+      "jsd_terms": 212,
+      "jsd_p": 9.999000099990002e-05,
+      "jsd_permutations": 10000
+    }
+  ]
+}

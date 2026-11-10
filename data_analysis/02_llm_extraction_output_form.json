@@ -1,0 +1,159 @@
+{
+  "$description": "Human-readable overview of the model-produced extraction form. This describes the form; it is not itself a valid extraction result.",
+  "$rules": [
+    "Every extraction field is required, even when its value may be null.",
+    "If a_self_use is false, clinical arrays are empty and all nullable clinical fields are null.",
+    "If c_indication_category is unknown, c_indication_subtype is null.",
+    "If d_side_effect_pts is empty, f_sentiment_about_side_effect is null."
+  ],
+  "a_self_use": {
+    "type": "boolean",
+    "options": [true, false],
+    "nullable": false
+  },
+  "b_products_mentioned": {
+    "type": "array",
+    "item_options": [
+      "botox",
+      "dysport",
+      "xeomin",
+      "jeuveau",
+      "daxxify",
+      "unspecified_bont_a"
+    ],
+    "empty_array_allowed": true,
+    "nullable": false
+  },
+  "c_indication_category": {
+    "type": "single_select",
+    "options": ["medical", "cosmetic", "unknown"],
+    "nullable": false
+  },
+  "c_indication_subtype": {
+    "type": "conditional_single_select",
+    "options_by_category": {
+      "medical": [
+        "chronic_migraine",
+        "cervical_dystonia",
+        "blepharospasm",
+        "spasticity",
+        "hyperhidrosis",
+        "overactive_bladder",
+        "strabismus",
+        "tmj_medical",
+        "other_medical"
+      ],
+      "cosmetic": [
+        "glabellar",
+        "forehead",
+        "crows_feet",
+        "masseter_jawline",
+        "neck_platysma",
+        "lip_flip",
+        "baby_botox",
+        "other_cosmetic"
+      ],
+      "unknown": [null]
+    },
+    "nullable": true
+  },
+  "d_side_effect_pts": {
+    "type": "array_of_objects",
+    "items": {
+      "raw_span": {
+        "type": "free_text",
+        "description": "Shortest verbatim text span naming the reported side effect."
+      },
+      "meddra_pt": {
+        "type": "free_text",
+        "description": "Candidate MedDRA Preferred Term; validated in a later step."
+      }
+    },
+    "empty_array_allowed": true,
+    "nullable": false
+  },
+  "e1_post_overall_sentiment": {
+    "type": "single_select",
+    "options": ["positive", "negative", "mixed", "neutral"],
+    "nullable": false
+  },
+  "e2_sentiment_about_botox": {
+    "type": "single_select",
+    "options": ["positive", "negative", "mixed", "neutral"],
+    "nullable": false
+  },
+  "f_sentiment_about_side_effect": {
+    "type": "single_select",
+    "options": ["distressed", "accepting", "dismissive", null],
+    "nullable": true
+  },
+  "g_treatment_area_freetext": {
+    "type": "free_text",
+    "options": ["explicitly stated treatment area", null],
+    "nullable": true
+  },
+  "h_dose_units": {
+    "type": "integer",
+    "minimum": 0,
+    "maximum": 2000,
+    "options": ["explicitly stated number of units", null],
+    "nullable": true
+  },
+  "i_provider_type": {
+    "type": "single_select",
+    "options": [
+      "medspa",
+      "dermatologist",
+      "plastic_surgeon",
+      "neurologist",
+      "other_md",
+      "nurse_injector",
+      "diy",
+      "unspecified",
+      null
+    ],
+    "nullable": true
+  },
+  "j_first_time_or_repeat": {
+    "type": "single_select",
+    "options": ["first_time", "repeat", null],
+    "nullable": true
+  },
+  "j_prior_treatment_count": {
+    "type": "integer",
+    "minimum": 0,
+    "maximum": 200,
+    "options": ["explicitly stated prior treatment count", null],
+    "nullable": true
+  },
+  "k_time_to_onset": {
+    "type": "single_select",
+    "options": ["<24h", "1_3d", "4_7d", "1_2w", "2_4w", ">4w", "unspecified", null],
+    "nullable": true
+  },
+  "l_duration_status": {
+    "type": "single_select",
+    "options": ["ongoing", "resolved_weeks", "resolved_months", "permanent", "unspecified", null],
+    "nullable": true
+  },
+  "m_sought_medical_attention": {
+    "type": "boolean",
+    "options": [true, false, null],
+    "nullable": true
+  },
+  "n_discontinuation_intent": {
+    "type": "single_select",
+    "options": ["will_continue", "considering_stopping", "stopped", "unclear", null],
+    "nullable": true
+  },
+  "o_age_range": {
+    "type": "single_select",
+    "options": ["<20", "20-29", "30-39", "40-49", "50-59", "60-69", "70+", null],
+    "nullable": true
+  },
+  "o_sex": {
+    "type": "single_select",
+    "options": ["female", "male", "nonbinary", null],
+    "nullable": true
+  }
+}

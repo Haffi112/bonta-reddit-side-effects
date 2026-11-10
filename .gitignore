@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Data (research outputs — reproducible, not committed)
+data/raw/
+data/interim/
+data/processed/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Paper artifacts (regenerable)
+docs/paper/figures/*.pdf
+docs/paper/figures/*.png
+
+# Validation (sensitive content — structure committed separately)
+validation/annotation_sample.csv
+validation/annotations_A.csv
+validation/annotations_B.csv
+validation/adjudication.csv
+
+# OS
+.DS_Store
+.coverage
+.Rhistory
+filtered_dataset/
+data_analysis/cache/
+data_analysis/02_llm_extraction_results/
+
+# Co-author emails with feedback and labelling answers (private)
+feedback/

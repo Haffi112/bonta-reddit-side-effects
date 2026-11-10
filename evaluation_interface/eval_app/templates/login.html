@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Annotator sign in · Extraction review{% endblock %}
+{% block main_class %}auth-shell{% endblock %}
+{% block content %}
+  <section class="auth-card">
+    <p class="eyebrow">Annotator access</p>
+    <h1>Continue your review</h1>
+    <p class="muted">Use the private access key supplied by the study administrator. No username is required.</p>
+    <form method="post" class="stack-form">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label for="access_key">Access key</label>
+      <input id="access_key" name="access_key" type="password" autocomplete="current-password" autofocus required>
+      <button class="button button-primary" type="submit">Sign in</button>
+    </form>
+    <a class="quiet-link" href="{{ url_for('admin.login') }}">Administrator sign in</a>
+  </section>
+{% endblock %}
+

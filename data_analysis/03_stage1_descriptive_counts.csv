@@ -1,0 +1,101 @@
+field,field_label,value,value_label,scope,denominator,count,percent,multi_label,note
+a_self_use,Self-use,true,True,all,118762,37246,31.361883430727,False,
+a_self_use,Self-use,false,False,all,118762,81516,68.638116569273,False,
+c_indication_category,Indication category,medical,Medical,self_use,37246,21010,56.4087418783225,False,
+c_indication_category,Indication category,cosmetic,Cosmetic,self_use,37246,12955,34.78225849755678,False,
+c_indication_category,Indication category,unknown,Unknown,self_use,37246,3281,8.80899962412071,False,
+c_indication_subtype,Indication subtype,chronic_migraine,Chronic migraine,self_use,37246,7515,20.176663265854053,False,
+c_indication_subtype,Indication subtype,cervical_dystonia,Cervical dystonia,self_use,37246,479,1.286044138967943,False,
+c_indication_subtype,Indication subtype,blepharospasm,Blepharospasm,self_use,37246,75,0.20136390484884284,False,
+c_indication_subtype,Indication subtype,spasticity,Spasticity,self_use,37246,369,0.9907104118563067,False,
+c_indication_subtype,Indication subtype,hyperhidrosis,Hyperhidrosis,self_use,37246,974,2.6150459109703057,False,
+c_indication_subtype,Indication subtype,overactive_bladder,Overactive bladder,self_use,37246,802,2.153251355850293,False,
+c_indication_subtype,Indication subtype,strabismus,Strabismus,self_use,37246,75,0.20136390484884284,False,
+c_indication_subtype,Indication subtype,tmj_medical,Tmj medical,self_use,37246,3376,9.064060570262578,False,
+c_indication_subtype,Indication subtype,other_medical,Other medical,self_use,37246,7265,19.505450249691243,False,
+c_indication_subtype,Indication subtype,glabellar,Glabellar,self_use,37246,1201,3.2245073296461366,False,
+c_indication_subtype,Indication subtype,forehead,Forehead,self_use,37246,3358,9.015733233098857,False,
+c_indication_subtype,Indication subtype,crows_feet,Crows feet,self_use,37246,612,1.6431294635665574,False,
+c_indication_subtype,Indication subtype,masseter_jawline,Masseter jawline,self_use,37246,1470,3.9467325350373192,False,
+c_indication_subtype,Indication subtype,neck_platysma,Neck platysma,self_use,37246,131,0.35171562046931215,False,
+c_indication_subtype,Indication subtype,lip_flip,Lip flip,self_use,37246,512,1.3746442571014337,False,
+c_indication_subtype,Indication subtype,baby_botox,Baby botox,self_use,37246,67,0.17988508833163291,False,
+c_indication_subtype,Indication subtype,other_cosmetic,Other cosmetic,self_use,37246,5444,14.616334639961337,False,
+c_indication_subtype,Indication subtype,not_reported,Not reported,self_use,37246,3521,9.453364119637008,False,
+e1_post_overall_sentiment,Overall post sentiment,positive,Positive,all,118762,11737,9.882790791667368,False,
+e1_post_overall_sentiment,Overall post sentiment,mixed,Mixed,all,118762,4895,4.121688755662586,False,
+e1_post_overall_sentiment,Overall post sentiment,neutral,Neutral,all,118762,67974,57.23547936208551,False,
+e1_post_overall_sentiment,Overall post sentiment,negative,Negative,all,118762,34156,28.76004109058453,False,
+e2_sentiment_about_botox,Sentiment about BoNT-A,positive,Positive,all,118762,17865,15.042690422862531,False,
+e2_sentiment_about_botox,Sentiment about BoNT-A,mixed,Mixed,all,118762,4226,3.5583772587191187,False,
+e2_sentiment_about_botox,Sentiment about BoNT-A,neutral,Neutral,all,118762,80275,67.59316953234199,False,
+e2_sentiment_about_botox,Sentiment about BoNT-A,negative,Negative,all,118762,16396,13.805762786076354,False,
+f_sentiment_about_side_effect,Sentiment about side effect,distressed,Distressed,side_effect,12395,8338,67.269060104881,False,
+f_sentiment_about_side_effect,Sentiment about side effect,accepting,Accepting,side_effect,12395,3304,26.65590964098427,False,
+f_sentiment_about_side_effect,Sentiment about side effect,dismissive,Dismissive,side_effect,12395,642,5.17950786607503,False,
+f_sentiment_about_side_effect,Sentiment about side effect,not_reported,Not reported,side_effect,12395,111,0.8955223880597015,False,
+i_provider_type,Provider type,medspa,Medspa,self_use,37246,528,1.4176018901358536,False,
+i_provider_type,Provider type,dermatologist,Dermatologist,self_use,37246,521,1.3988079256832948,False,
+i_provider_type,Provider type,plastic_surgeon,Plastic surgeon,self_use,37246,242,0.6497341996455995,False,
+i_provider_type,Provider type,neurologist,Neurologist,self_use,37246,2281,6.124147559469473,False,
+i_provider_type,Provider type,other_md,Other md,self_use,37246,3104,8.333780808677442,False,
+i_provider_type,Provider type,nurse_injector,Nurse injector,self_use,37246,575,1.5437899371744617,False,
+i_provider_type,Provider type,diy,Diy,self_use,37246,348,0.9343285184986307,False,
+i_provider_type,Provider type,unspecified,Unspecified,self_use,37246,3068,8.237126134349998,False,
+i_provider_type,Provider type,not_reported,Not reported,self_use,37246,26579,71.36068302636525,False,
+j_first_time_or_repeat,First or repeat treatment,first_time,First time,self_use,37246,6815,18.297266820598185,False,
+j_first_time_or_repeat,First or repeat treatment,repeat,Repeat,self_use,37246,9247,24.826827041829993,False,
+j_first_time_or_repeat,First or repeat treatment,not_reported,Not reported,self_use,37246,21184,56.87590613757182,False,
+k_time_to_onset,Time to onset,<24h,<24h,self_use,37246,1439,3.863502121033131,False,
+k_time_to_onset,Time to onset,1_3d,1-3 d,self_use,37246,1573,4.223272297696397,False,
+k_time_to_onset,Time to onset,4_7d,4-7 d,self_use,37246,583,1.5652687536916716,False,
+k_time_to_onset,Time to onset,1_2w,1-2 wk,self_use,37246,886,2.3787789292809967,False,
+k_time_to_onset,Time to onset,2_4w,2-4 wk,self_use,37246,441,1.1840197605111957,False,
+k_time_to_onset,Time to onset,>4w,>4w,self_use,37246,683,1.8337539601567954,False,
+k_time_to_onset,Time to onset,unspecified,Unspecified,self_use,37246,3502,9.402351930408635,False,
+k_time_to_onset,Time to onset,not_reported,Not reported,self_use,37246,28139,75.54905224722118,False,
+l_duration_status,Duration status,ongoing,Ongoing,self_use,37246,5304,14.240455350910166,False,
+l_duration_status,Duration status,resolved_weeks,Resolved weeks,self_use,37246,736,1.976051119583311,False,
+l_duration_status,Duration status,resolved_months,Resolved months,self_use,37246,215,0.5772431939000161,False,
+l_duration_status,Duration status,permanent,Permanent,self_use,37246,48,0.12887289910325941,False,
+l_duration_status,Duration status,unspecified,Unspecified,self_use,37246,4931,13.239005530795254,False,
+l_duration_status,Duration status,not_reported,Not reported,self_use,37246,26012,69.838371905708,False,
+m_sought_medical_attention,Sought medical attention,true,True,self_use,37246,1436,3.8554475648391775,False,
+m_sought_medical_attention,Sought medical attention,false,False,self_use,37246,167,0.4483702947967567,False,
+m_sought_medical_attention,Sought medical attention,not_reported,Not reported,self_use,37246,35643,95.69618214036407,False,
+n_discontinuation_intent,Discontinuation intent,will_continue,Will continue,self_use,37246,4620,12.404016538688719,False,
+n_discontinuation_intent,Discontinuation intent,considering_stopping,Considering stopping,self_use,37246,1906,5.117328035225259,False,
+n_discontinuation_intent,Discontinuation intent,stopped,Stopped,self_use,37246,1179,3.165440584223809,False,
+n_discontinuation_intent,Discontinuation intent,unclear,Unclear,self_use,37246,6896,18.514739837834934,False,
+n_discontinuation_intent,Discontinuation intent,not_reported,Not reported,self_use,37246,22645,60.79847500402728,False,
+o_age_range,Age range,<20,<20,self_use,37246,238,0.6389947913869946,False,
+o_age_range,Age range,20-29,20-29,self_use,37246,2986,8.016968265048595,False,
+o_age_range,Age range,30-39,30-39,self_use,37246,3559,9.555388498093755,False,
+o_age_range,Age range,40-49,40-49,self_use,37246,1238,3.3238468560382324,False,
+o_age_range,Age range,50-59,50-59,self_use,37246,310,0.8323041400418837,False,
+o_age_range,Age range,60-69,60-69,self_use,37246,87,0.2335821296246577,False,
+o_age_range,Age range,70+,70+,self_use,37246,21,0.056381893357675995,False,
+o_age_range,Age range,not_reported,Not reported,self_use,37246,28807,77.34253342640821,False,
+o_sex,Sex,female,Female,self_use,37246,4589,12.32078612468453,False,
+o_sex,Sex,male,Male,self_use,37246,1180,3.1681254362884603,False,
+o_sex,Sex,nonbinary,Nonbinary,self_use,37246,14,0.03758792890511733,False,
+o_sex,Sex,not_reported,Not reported,self_use,37246,31463,84.4735005101219,False,
+b_products_mentioned,Products mentioned,botox,Botox,self_use,37246,32058,86.07098748858938,True,Percentages may sum above 100 because products are multi-label.
+b_products_mentioned,Products mentioned,dysport,Dysport,self_use,37246,1591,4.271599634860119,True,Percentages may sum above 100 because products are multi-label.
+b_products_mentioned,Products mentioned,xeomin,Xeomin,self_use,37246,476,1.277989582773989,True,Percentages may sum above 100 because products are multi-label.
+b_products_mentioned,Products mentioned,jeuveau,Jeuveau,self_use,37246,223,0.5987220104172261,True,Percentages may sum above 100 because products are multi-label.
+b_products_mentioned,Products mentioned,daxxify,Daxxify,self_use,37246,157,0.42152177415024433,True,Percentages may sum above 100 because products are multi-label.
+b_products_mentioned,Products mentioned,unspecified_bont_a,Unspecified BoNT-A,self_use,37246,4091,10.983729796488214,True,Percentages may sum above 100 because products are multi-label.
+b_products_mentioned,Products mentioned,not_reported,Not reported,self_use,37246,360,0.9665467432744456,True,No product extracted for the record.
+d_side_effect_count,Distinct candidate side-effect count,0,0,self_use,37246,24851,66.72125865864791,False,Counts distinct normalized candidate Preferred Terms per record.
+d_side_effect_count,Distinct candidate side-effect count,1,1,self_use,37246,6300,16.914568007302798,False,Counts distinct normalized candidate Preferred Terms per record.
+d_side_effect_count,Distinct candidate side-effect count,2,2,self_use,37246,2853,7.6598829404499815,False,Counts distinct normalized candidate Preferred Terms per record.
+d_side_effect_count,Distinct candidate side-effect count,3,3,self_use,37246,1497,4.019223540782903,False,Counts distinct normalized candidate Preferred Terms per record.
+d_side_effect_count,Distinct candidate side-effect count,4,4,self_use,37246,789,2.1183482790098265,False,Counts distinct normalized candidate Preferred Terms per record.
+d_side_effect_count,Distinct candidate side-effect count,5+,5+,self_use,37246,956,2.5667185738065834,False,Counts distinct normalized candidate Preferred Terms per record.
+g_treatment_area_freetext,Treatment area,reported,Reported,self_use,37246,20273,54.430005906674545,False,Availability only; no free text is exported.
+g_treatment_area_freetext,Treatment area,not_reported,Not reported,self_use,37246,16973,45.569994093325455,False,Availability only; no free text is exported.
+h_dose_units,Dose units,reported,Reported,self_use,37246,3747,10.060140686248188,False,Availability only; no free text is exported.
+h_dose_units,Dose units,not_reported,Not reported,self_use,37246,33499,89.93985931375181,False,Availability only; no free text is exported.
+j_prior_treatment_count,Prior treatment count,reported,Reported,self_use,37246,1340,3.5977017666326585,False,Availability only; no free text is exported.
+j_prior_treatment_count,Prior treatment count,not_reported,Not reported,self_use,37246,35906,96.40229823336735,False,Availability only; no free text is exported.

@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}Admin dashboard · Extraction review{% endblock %}
+{% block header_actions %}
+  <nav class="header-nav">
+    <a href="{{ url_for('admin.export_annotations') }}">Export CSV</a>
+    <form method="post" action="{{ url_for('admin.logout') }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button class="link-button" type="submit">Sign out</button>
+    </form>
+  </nav>
+{% endblock %}
+{% block content %}
+  <section class="page-heading">
+    <div><p class="eyebrow">Study administration</p><h1>Evaluation dashboard</h1></div>
+    <a class="button button-secondary" href="{{ url_for('admin.export_annotations') }}">Export annotations + source text</a>
+  </section>
+
+  <section class="metric-grid" aria-label="Evaluation totals">
+    <article class="metric-card"><span>Comparisons</span><strong>{{ stats.total_comparisons }}</strong><small>submissions with both responses</small></article>
+    <article class="metric-card"><span>Blinded forms</span><strong>{{ stats.total_items }}</strong><small>two responses per comparison</small></article>
+    <article class="metric-card"><span>Saved response reviews</span><strong>{{ stats.total_annotations }}</strong><small>two saved per comparison</small></article>
+    <article class="metric-card"><span>Active annotators</span><strong>{{ stats.active_annotators }}</strong><small>included in agreement</small></article>
+  </section>
+
+  <section class="admin-grid">
+    <article class="card">
+      <div class="card-heading"><div><p class="eyebrow">Access</p><h2>Annotators</h2></div></div>
+      <form method="post" action="{{ url_for('admin.create_annotator') }}" class="inline-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <label class="sr-only" for="annotator_label">Annotator label</label>
+        <input id="annotator_label" name="label" placeholder="e.g. Annotator 1" maxlength="100" required>
+        <button class="button button-primary" type="submit">Generate access</button>
+      </form>
+      <div class="user-list">
+        {% for row in stats.progress %}
+          <div class="user-row">
+            <div class="user-summary">
+              <div><strong>{{ row.user.label }}</strong><span class="status-dot {% if row.user.is_active %}status-active{% endif %}">{{ 'Active' if row.user.is_active else 'Inactive' }}</span></div>
+              <small>{{ row.completed }} / {{ row.total }} comparisons{% if row.percent is not none %} · {{ '%.1f'|format(row.percent) }}%{% endif %} · {{ row.forms_completed }} response forms</small>
+              <progress class="progress-track" max="{{ row.total or 1 }}" value="{{ row.completed }}">{{ row.completed }} of {{ row.total }}</progress>
+            </div>
+            <div class="user-actions">
+              <form method="post" action="{{ url_for('admin.rotate_key', annotator_id=row.user.id) }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button class="link-button" type="submit">Rotate key</button>
+              </form>
+              <form method="post" action="{{ url_for('admin.toggle_annotator', annotator_id=row.user.id) }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button class="link-button danger-link" type="submit">{{ 'Deactivate' if row.user.is_active else 'Reactivate' }}</button>
+              </form>
+            </div>
+          </div>
+        {% else %}
+          <div class="empty-state"><p>No annotators yet. Generate the first access key above.</p></div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-heading"><div><p class="eyebrow">Validity</p><h2>Correctness by model</h2></div></div>
+      <p class="card-note">Model identity is visible here only. Percentages pool submitted field decisions.</p>
+      <div class="model-list">
+        {% for model in stats.model_accuracy %}
+          <div class="model-row">
+            <div><strong>{{ model.label }}</strong><code>{{ model.key }}</code></div>
+            <div class="model-score"><strong>{{ '%.1f'|format(model.percent) }}%</strong><small>{{ model.correct }} / {{ model.ratings }}</small></div>
+          </div>
+        {% else %}
+          <div class="empty-state"><p>Model correctness appears after the first saved review.</p></div>
+        {% endfor %}
+      </div>
+    </article>
+  </section>
+
+  <section class="card table-card agreement-card">
+    <div class="card-heading">
+      <div><p class="eyebrow">Reliability</p><h2>Field agreement</h2></div>
+      <p>Complete units require decisions from all {{ stats.active_annotators }} active annotators.</p>
+    </div>
+    {% if stats.field_agreement %}
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Field</th><th>Complete units</th><th>Marked correct</th><th>Unanimous</th><th>Pairwise agreement</th><th>Fleiss’ κ</th></tr></thead>
+          <tbody>
+            {% for field in stats.field_agreement %}
+              <tr>
+                <td><strong>{{ field.label }}</strong><code>{{ field.key }}</code></td>
+                <td>{{ field.complete_units }}</td>
+                <td>{{ '%.1f%%'|format(field.accuracy) if field.accuracy is not none else '—' }}</td>
+                <td>{{ '%.1f%%'|format(field.unanimous) if field.unanimous is not none else '—' }}</td>
+                <td>{{ '%.1f%%'|format(field.pairwise) if field.pairwise is not none else '—' }}</td>
+                <td>{{ '%.3f'|format(field.kappa) if field.kappa is not none else '—' }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% else %}
+      <div class="empty-state"><p>Agreement statistics will appear as annotators complete matching forms.</p></div>
+    {% endif %}
+  </section>
+{% endblock %}

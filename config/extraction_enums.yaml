@@ -1,0 +1,121 @@
+# Permitted values for every enumerated field of the PostExtraction schema.
+#
+# This file is the published, human-auditable copy of the value sets printed in
+# Appendix A of the manuscript. src/botox_se/schema.py declares the same values
+# as Python enums so they can be type-checked, and tests/test_schema.py asserts
+# the two agree exactly. Edit both, or the test fails.
+#
+# The sets are closed: the structured-output call rejects any response outside
+# them, so adding a value here is a protocol change, not a hint to the model.
+
+products:
+  - botox
+  - dysport
+  - xeomin
+  - jeuveau
+  - daxxify
+  - unspecified_bont_a
+
+indication_category:
+  - medical
+  - cosmetic
+  - unknown
+
+# Subtype is drawn from the set matching the category. A medical category with a
+# cosmetic subtype is a model failure, not a coercible value: schema.py raises.
+indication_subtype:
+  medical:
+    - chronic_migraine
+    - cervical_dystonia
+    - blepharospasm
+    - spasticity
+    - hyperhidrosis
+    - overactive_bladder
+    - strabismus
+    - tmj_medical
+    - other_medical
+  cosmetic:
+    - glabellar
+    - forehead
+    - crows_feet
+    - masseter_jawline
+    - neck_platysma
+    - lip_flip
+    - baby_botox
+    - other_cosmetic
+
+sentiment:
+  - positive
+  - negative
+  - mixed
+  - neutral
+
+side_effect_sentiment:
+  - distressed
+  - accepting
+  - dismissive
+
+provider_type:
+  - medspa
+  - dermatologist
+  - plastic_surgeon
+  - neurologist
+  - other_md
+  - nurse_injector
+  - diy
+  - unspecified
+
+first_time_or_repeat:
+  - first_time
+  - repeat
+
+time_to_onset:
+  - "<24h"
+  - 1_3d
+  - 4_7d
+  - 1_2w
+  - 2_4w
+  - ">4w"
+  - unspecified
+
+duration_status:
+  - ongoing
+  - resolved_weeks
+  - resolved_months
+  - permanent
+  - unspecified
+
+discontinuation_intent:
+  - will_continue
+  - considering_stopping
+  - stopped
+  - unclear
+
+age_range:
+  - "<20"
+  - 20-29
+  - 30-39
+  - 40-49
+  - 50-59
+  - 60-69
+  - 70+
+
+sex:
+  - female
+  - male
+  - nonbinary
+
+# Which text the extractor was shown. A thread-only comment ("same thing happened
+# to me") is unanswerable for a_self_use without its parent submission, so the
+# parent is supplied and this records that it was.
+source_fields:
+  - title
+  - selftext
+  - comment_body
+  - parent_title
+  - parent_selftext
+
+# Numeric bounds, enforced in schema.py.
+bounds:
+  dose_units: [0, 2000]
+  prior_treatment_count: [0, 200]

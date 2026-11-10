@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block title %}Blinded response comparison · Extraction review{% endblock %}
+{% block header_actions %}
+  <nav class="header-nav" aria-label="Annotator navigation">
+    <span class="user-pill">{{ annotator.label }}</span>
+    <a href="{{ url_for('review.history') }}">Recent comparisons</a>
+    <form method="post" action="{{ url_for('auth.logout') }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button class="link-button" type="submit">Sign out</button>
+    </form>
+  </nav>
+{% endblock %}
+{% block main_class %}review-shell comparison-shell{% endblock %}
+{% block content %}
+  <section class="review-topbar">
+    <div>
+      <p class="eyebrow">Blinded two-response evaluation</p>
+      <h1>Compare both extractions with the post</h1>
+    </div>
+    <div class="progress-block" aria-label="Review progress">
+      <strong>{{ completed }} / {{ total }}</strong>
+      <span>submissions reviewed</span>
+      <progress class="progress-track" max="{{ total or 1 }}" value="{{ completed }}">{{ completed }} of {{ total }}</progress>
+    </div>
+  </section>
+
+  <aside class="source-panel comparison-source" aria-label="Reddit submission source">
+    <div class="panel-heading comparison-source-heading">
+      <div>
+        <p class="eyebrow">Source material</p>
+        <h2>Reddit submission</h2>
+      </div>
+      <div class="source-heading-meta">
+        <span class="private-badge">Private</span>
+        <small>Stays visible while you compare</small>
+      </div>
+    </div>
+    <div class="comparison-source-grid">
+      <section class="source-section">
+        <h3>Title</h3>
+        <div class="source-text source-title" data-source-region>{{ submission.title }}</div>
+      </section>
+      <section class="source-section">
+        <h3>Body</h3>
+        <div class="source-text" data-source-region>{{ submission.selftext }}</div>
+      </section>
+    </div>
+    <p class="highlight-status" data-highlight-status aria-live="polite"></p>
+  </aside>
+
+  <form method="post" class="comparison-form" data-review-form>
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    {% for card in cards %}
+      <input type="hidden" name="output_order" value="{{ card.output.blinded_id }}">
+    {% endfor %}
+
+    <div class="response-grid">
+      {% for card in cards %}
+        <section class="form-panel response-card" data-output-card>
+          <div class="panel-heading response-heading">
+            <div>
+              <p class="eyebrow">Model-produced form</p>
+              <h2>{{ card.label }}</h2>
+            </div>
+            <div class="response-actions">
+              <span class="blind-badge">Identity hidden</span>
+              <button class="button button-secondary button-small" type="button" data-mark-undecided>Mark undecided correct</button>
+            </div>
+          </div>
+          <p class="form-instruction">Judge this response independently. “Incorrect” includes unsupported, incomplete, or wrongly null values.</p>
+
+          <div class="field-list">
+            {% for row in card.rows %}
+              <article class="field-row{% if row.nested %} field-row-nested{% endif %}" data-field-row data-field-key="{{ row.canonical_key }}" data-value-signature="{{ row.value_signature }}">
+                <div class="field-copy">
+                  <div class="field-title-line">
+                    <h3>{{ row.label }}</h3>
+                    <code>{{ row.key }}</code>
+                  </div>
+                  <p>{{ row.description }}</p>
+                  <div class="extracted-value{% if row.value is none %} value-null{% endif %}">{{ row.display_value }}</div>
+                  {% if row.is_verbatim %}
+                    <button class="locate-button" type="button" data-verbatim="{{ row.value }}">Locate wording in post</button>
+                  {% endif %}
+                </div>
+                <fieldset class="decision-control">
+                  <legend class="sr-only">Is {{ row.label }} correct in {{ card.label }}?</legend>
+                  <label class="decision-option decision-correct">
+                    <input type="radio" name="decision::{{ card.output.blinded_id }}::{{ row.key }}" value="correct" {% if card.decisions.get(row.key) == 'correct' %}checked{% endif %} required>
+                    <span>Correct</span>
+                  </label>
+                  <label class="decision-option decision-incorrect">
+                    <input type="radio" name="decision::{{ card.output.blinded_id }}::{{ row.key }}" value="incorrect" {% if card.decisions.get(row.key) == 'incorrect' %}checked{% endif %} required>
+                    <span>Incorrect</span>
+                  </label>
+                </fieldset>
+              </article>
+            {% endfor %}
+          </div>
+
+          <div class="notes-block response-notes">
+            <label for="notes-{{ card.output.blinded_id }}">Note for {{ card.label }} <span>(optional, visible to the admin)</span></label>
+            <textarea id="notes-{{ card.output.blinded_id }}" name="notes::{{ card.output.blinded_id }}" rows="4" maxlength="4000" placeholder="Record ambiguity or explain incorrect decisions for this response…">{{ card.notes }}</textarea>
+          </div>
+        </section>
+      {% endfor %}
+    </div>
+
+    <div class="submit-bar comparison-submit">
+      <div>
+        <p><strong>Every field in both responses is required.</strong> Matching values automatically receive the same decision.</p>
+        <p class="sync-status" data-sync-status aria-live="polite"></p>
+      </div>
+      <button class="button button-primary" type="submit">Save both and open next</button>
+    </div>
+  </form>
+{% endblock %}

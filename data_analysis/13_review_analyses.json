@@ -1,0 +1,1273 @@
+{
+  "self_use_gate": {
+    "stage1": {
+      "n": 1168,
+      "tp": 334,
+      "fp": 24,
+      "fn": 54,
+      "tn": 756,
+      "accuracy": {
+        "k": 1090,
+        "n": 1168,
+        "rate": 0.9332191780821918,
+        "ci_low": 0.9174353844382338,
+        "ci_high": 0.9461626666312738
+      },
+      "sensitivity": {
+        "k": 334,
+        "n": 388,
+        "rate": 0.8608247422680413,
+        "ci_low": 0.8228339280222315,
+        "ci_high": 0.8917407901372564
+      },
+      "specificity": {
+        "k": 756,
+        "n": 780,
+        "rate": 0.9692307692307692,
+        "ci_low": 0.954624957263777,
+        "ci_high": 0.9792373585944696
+      },
+      "ppv": {
+        "k": 334,
+        "n": 358,
+        "rate": 0.9329608938547486,
+        "ci_low": 0.9021894149193767,
+        "ci_high": 0.9545393883812326
+      },
+      "npv": {
+        "k": 756,
+        "n": 810,
+        "rate": 0.9333333333333333,
+        "ci_low": 0.9140286659733012,
+        "ci_high": 0.9485471986394955
+      }
+    },
+    "stage3": {
+      "n": 1168,
+      "tp": 383,
+      "fp": 4,
+      "fn": 5,
+      "tn": 776,
+      "accuracy": {
+        "k": 1159,
+        "n": 1168,
+        "rate": 0.9922945205479452,
+        "ci_low": 0.9854205421572342,
+        "ci_high": 0.9959408795126607
+      },
+      "sensitivity": {
+        "k": 383,
+        "n": 388,
+        "rate": 0.9871134020618557,
+        "ci_low": 0.9701924758522289,
+        "ci_high": 0.9944833936630797
+      },
+      "specificity": {
+        "k": 776,
+        "n": 780,
+        "rate": 0.9948717948717949,
+        "ci_low": 0.9868890556238026,
+        "ci_high": 0.9980039878769713
+      },
+      "ppv": {
+        "k": 383,
+        "n": 387,
+        "rate": 0.9896640826873385,
+        "ci_low": 0.9737292268633743,
+        "ci_high": 0.9959734273626538
+      },
+      "npv": {
+        "k": 776,
+        "n": 781,
+        "rate": 0.9935979513444302,
+        "ci_low": 0.9851015880792737,
+        "ci_high": 0.9972624184788248
+      }
+    }
+  },
+  "deployed_runs": {
+    "stage4": {
+      "records": 1168,
+      "self_use": {
+        "n": 1168,
+        "tp": 373,
+        "fp": 5,
+        "fn": 15,
+        "tn": 775,
+        "accuracy": {
+          "k": 1148,
+          "n": 1168,
+          "rate": 0.9828767123287672,
+          "ci_low": 0.9736992361680498,
+          "ci_high": 0.9888883148264213
+        },
+        "sensitivity": {
+          "k": 373,
+          "n": 388,
+          "rate": 0.961340206185567,
+          "ci_low": 0.9372008659213417,
+          "ci_high": 0.9764339522968605
+        },
+        "specificity": {
+          "k": 775,
+          "n": 780,
+          "rate": 0.9935897435897436,
+          "ci_low": 0.9850826022318374,
+          "ci_high": 0.99725890488681
+        },
+        "ppv": {
+          "k": 373,
+          "n": 378,
+          "rate": 0.9867724867724867,
+          "ci_low": 0.9694136519908302,
+          "ci_high": 0.9943371181234392
+        },
+        "npv": {
+          "k": 775,
+          "n": 790,
+          "rate": 0.9810126582278481,
+          "ci_low": 0.9689097989163601,
+          "ci_high": 0.988460204319591
+        }
+      },
+      "presence": {
+        "n": 383,
+        "tp": 127,
+        "fp": 13,
+        "fn": 4,
+        "tn": 239,
+        "accuracy": {
+          "k": 366,
+          "n": 383,
+          "rate": 0.9556135770234987,
+          "ci_low": 0.9300730731640877,
+          "ci_high": 0.9721053051926279
+        },
+        "sensitivity": {
+          "k": 127,
+          "n": 131,
+          "rate": 0.9694656488549618,
+          "ci_low": 0.9241193283504454,
+          "ci_high": 0.988063030663926
+        },
+        "specificity": {
+          "k": 239,
+          "n": 252,
+          "rate": 0.9484126984126984,
+          "ci_low": 0.9137520782529315,
+          "ci_high": 0.9696074876350645
+        },
+        "ppv": {
+          "k": 127,
+          "n": 140,
+          "rate": 0.9071428571428571,
+          "ci_low": 0.8476094094916335,
+          "ci_high": 0.9449298273504159
+        },
+        "npv": {
+          "k": 239,
+          "n": 243,
+          "rate": 0.9835390946502057,
+          "ci_low": 0.9584475459186488,
+          "ci_high": 0.993580533654095
+        }
+      },
+      "indication_accuracy": {
+        "k": 336,
+        "n": 384,
+        "rate": 0.875,
+        "ci_low": 0.8381628713865551,
+        "ci_high": 0.9044085929321871
+      },
+      "medical_label_precision": {
+        "k": 201,
+        "n": 205,
+        "rate": 0.9804878048780488,
+        "ci_low": 0.9509127225603162,
+        "ci_high": 0.9923865682626762
+      },
+      "cosmetic_label_precision": {
+        "k": 110,
+        "n": 112,
+        "rate": 0.9821428571428571,
+        "ci_low": 0.9372195125788385,
+        "ci_high": 0.9950891884637512
+      }
+    },
+    "stage2": {
+      "records": 1165,
+      "self_use": {
+        "n": 1165,
+        "tp": 333,
+        "fp": 26,
+        "fn": 52,
+        "tn": 754,
+        "accuracy": {
+          "k": 1087,
+          "n": 1165,
+          "rate": 0.9330472103004291,
+          "ci_low": 0.9172247800570882,
+          "ci_high": 0.9460231757589498
+        },
+        "sensitivity": {
+          "k": 333,
+          "n": 385,
+          "rate": 0.8649350649350649,
+          "ci_low": 0.8271667214418874,
+          "ci_high": 0.8954928448817157
+        },
+        "specificity": {
+          "k": 754,
+          "n": 780,
+          "rate": 0.9666666666666667,
+          "ci_low": 0.9516067755232218,
+          "ci_high": 0.9771524675707721
+        },
+        "ppv": {
+          "k": 333,
+          "n": 359,
+          "rate": 0.9275766016713092,
+          "ci_low": 0.8959994833250284,
+          "ci_high": 0.9501000803737016
+        },
+        "npv": {
+          "k": 754,
+          "n": 806,
+          "rate": 0.9354838709677419,
+          "ci_low": 0.9163725339626553,
+          "ci_high": 0.9504637984501915
+        }
+      },
+      "presence": {
+        "n": 380,
+        "tp": 99,
+        "fp": 13,
+        "fn": 29,
+        "tn": 239,
+        "accuracy": {
+          "k": 338,
+          "n": 380,
+          "rate": 0.8894736842105263,
+          "ci_low": 0.8539677070883677,
+          "ci_high": 0.9171840098455554
+        },
+        "sensitivity": {
+          "k": 99,
+          "n": 128,
+          "rate": 0.7734375,
+          "ci_low": 0.6935732116243923,
+          "ci_high": 0.8373675154135328
+        },
+        "specificity": {
+          "k": 239,
+          "n": 252,
+          "rate": 0.9484126984126984,
+          "ci_low": 0.9137520782529315,
+          "ci_high": 0.9696074876350645
+        },
+        "ppv": {
+          "k": 99,
+          "n": 112,
+          "rate": 0.8839285714285714,
+          "ci_low": 0.8114943070899338,
+          "ci_high": 0.9308996585550914
+        },
+        "npv": {
+          "k": 239,
+          "n": 268,
+          "rate": 0.8917910447761194,
+          "ci_low": 0.8489140213575143,
+          "ci_high": 0.9235950760812078
+        }
+      },
+      "indication_accuracy": {
+        "k": 310,
+        "n": 381,
+        "rate": 0.8136482939632546,
+        "ci_low": 0.7714878893110246,
+        "ci_high": 0.8495470707278188
+      },
+      "medical_label_precision": {
+        "k": 184,
+        "n": 193,
+        "rate": 0.9533678756476683,
+        "ci_low": 0.9137647976136809,
+        "ci_high": 0.9752755552085879
+      },
+      "cosmetic_label_precision": {
+        "k": 110,
+        "n": 113,
+        "rate": 0.9734513274336283,
+        "ci_low": 0.9248403062316028,
+        "ci_high": 0.9909305261422301
+      }
+    },
+    "stage3": {
+      "records": 1168,
+      "self_use": {
+        "n": 1168,
+        "tp": 383,
+        "fp": 4,
+        "fn": 5,
+        "tn": 776,
+        "accuracy": {
+          "k": 1159,
+          "n": 1168,
+          "rate": 0.9922945205479452,
+          "ci_low": 0.9854205421572342,
+          "ci_high": 0.9959408795126607
+        },
+        "sensitivity": {
+          "k": 383,
+          "n": 388,
+          "rate": 0.9871134020618557,
+          "ci_low": 0.9701924758522289,
+          "ci_high": 0.9944833936630797
+        },
+        "specificity": {
+          "k": 776,
+          "n": 780,
+          "rate": 0.9948717948717949,
+          "ci_low": 0.9868890556238026,
+          "ci_high": 0.9980039878769713
+        },
+        "ppv": {
+          "k": 383,
+          "n": 387,
+          "rate": 0.9896640826873385,
+          "ci_low": 0.9737292268633743,
+          "ci_high": 0.9959734273626538
+        },
+        "npv": {
+          "k": 776,
+          "n": 781,
+          "rate": 0.9935979513444302,
+          "ci_low": 0.9851015880792737,
+          "ci_high": 0.9972624184788248
+        }
+      },
+      "presence": {
+        "n": 383,
+        "tp": 126,
+        "fp": 10,
+        "fn": 5,
+        "tn": 242,
+        "accuracy": {
+          "k": 368,
+          "n": 383,
+          "rate": 0.9608355091383812,
+          "ci_low": 0.9363940658304684,
+          "ci_high": 0.9761244658598487
+        },
+        "sensitivity": {
+          "k": 126,
+          "n": 131,
+          "rate": 0.9618320610687023,
+          "ci_low": 0.9137614590036858,
+          "ci_high": 0.9835886665307774
+        },
+        "specificity": {
+          "k": 242,
+          "n": 252,
+          "rate": 0.9603174603174603,
+          "ci_low": 0.9285067954881602,
+          "ci_high": 0.9783047942729687
+        },
+        "ppv": {
+          "k": 126,
+          "n": 136,
+          "rate": 0.9264705882352942,
+          "ci_low": 0.8699381385317989,
+          "ci_high": 0.9595726587542631
+        },
+        "npv": {
+          "k": 242,
+          "n": 247,
+          "rate": 0.979757085020243,
+          "ci_low": 0.9534966992867986,
+          "ci_high": 0.9913231925852695
+        }
+      },
+      "indication_accuracy": {
+        "k": 351,
+        "n": 384,
+        "rate": 0.9140625,
+        "ci_low": 0.8817681181608016,
+        "ci_high": 0.9381545403578097
+      },
+      "medical_label_precision": {
+        "k": 205,
+        "n": 205,
+        "rate": 1.0,
+        "ci_low": 0.9816058610086978,
+        "ci_high": 0.9999999999999999
+      },
+      "cosmetic_label_precision": {
+        "k": 115,
+        "n": 115,
+        "rate": 1.0,
+        "ci_low": 0.9676757685506868,
+        "ci_high": 0.9999999999999999
+      }
+    },
+    "stage1": {
+      "records": 1168,
+      "self_use": {
+        "n": 1168,
+        "tp": 334,
+        "fp": 24,
+        "fn": 54,
+        "tn": 756,
+        "accuracy": {
+          "k": 1090,
+          "n": 1168,
+          "rate": 0.9332191780821918,
+          "ci_low": 0.9174353844382338,
+          "ci_high": 0.9461626666312738
+        },
+        "sensitivity": {
+          "k": 334,
+          "n": 388,
+          "rate": 0.8608247422680413,
+          "ci_low": 0.8228339280222315,
+          "ci_high": 0.8917407901372564
+        },
+        "specificity": {
+          "k": 756,
+          "n": 780,
+          "rate": 0.9692307692307692,
+          "ci_low": 0.954624957263777,
+          "ci_high": 0.9792373585944696
+        },
+        "ppv": {
+          "k": 334,
+          "n": 358,
+          "rate": 0.9329608938547486,
+          "ci_low": 0.9021894149193767,
+          "ci_high": 0.9545393883812326
+        },
+        "npv": {
+          "k": 756,
+          "n": 810,
+          "rate": 0.9333333333333333,
+          "ci_low": 0.9140286659733012,
+          "ci_high": 0.9485471986394955
+        }
+      },
+      "presence": {
+        "n": 383,
+        "tp": 110,
+        "fp": 7,
+        "fn": 21,
+        "tn": 245,
+        "accuracy": {
+          "k": 355,
+          "n": 383,
+          "rate": 0.9268929503916449,
+          "ci_low": 0.8963693051571909,
+          "ci_high": 0.9489382298647174
+        },
+        "sensitivity": {
+          "k": 110,
+          "n": 131,
+          "rate": 0.8396946564885496,
+          "ci_low": 0.7673398621173624,
+          "ci_high": 0.892694527738565
+        },
+        "specificity": {
+          "k": 245,
+          "n": 252,
+          "rate": 0.9722222222222222,
+          "ci_low": 0.9437829988023249,
+          "ci_high": 0.9864806148319366
+        },
+        "ppv": {
+          "k": 110,
+          "n": 117,
+          "rate": 0.9401709401709402,
+          "ci_low": 0.8816369507918818,
+          "ci_high": 0.9707195252486178
+        },
+        "npv": {
+          "k": 245,
+          "n": 266,
+          "rate": 0.9210526315789473,
+          "ci_low": 0.8823309558495188,
+          "ci_high": 0.947786109848843
+        }
+      },
+      "indication_accuracy": {
+        "k": 317,
+        "n": 384,
+        "rate": 0.8255208333333334,
+        "ci_low": 0.7843884286153568,
+        "ci_high": 0.8602048563835514
+      },
+      "medical_label_precision": {
+        "k": 189,
+        "n": 194,
+        "rate": 0.9742268041237113,
+        "ci_low": 0.9410955227546884,
+        "ci_high": 0.9889420997780143
+      },
+      "cosmetic_label_precision": {
+        "k": 110,
+        "n": 112,
+        "rate": 0.9821428571428571,
+        "ci_low": 0.9372195125788385,
+        "ci_high": 0.9950891884637512
+      }
+    }
+  },
+  "sparse_field_misses": {
+    "stage1": {
+      "b_products_mentioned": {
+        "label": "Products mentioned",
+        "k": 2,
+        "n": 2,
+        "rate": 1.0,
+        "ci_low": 0.34238022750665303,
+        "ci_high": 1.0
+      },
+      "c_indication_subtype": {
+        "label": "Indication subtype",
+        "k": 10,
+        "n": 32,
+        "rate": 0.3125,
+        "ci_low": 0.17952541633609734,
+        "ci_high": 0.4856667830095541
+      },
+      "d_side_effect_pts": {
+        "label": "Side-effect list",
+        "k": 12,
+        "n": 216,
+        "rate": 0.05555555555555555,
+        "ci_low": 0.03206233786944289,
+        "ci_high": 0.09458101216128097
+      },
+      "f_sentiment_about_side_effect": {
+        "label": "Attitude toward side effect",
+        "k": 11,
+        "n": 217,
+        "rate": 0.05069124423963134,
+        "ci_low": 0.028537793849279475,
+        "ci_high": 0.08847582740955924
+      },
+      "g_treatment_area_freetext": {
+        "label": "Treatment area",
+        "k": 14,
+        "n": 142,
+        "rate": 0.09859154929577464,
+        "ci_low": 0.059640338367060175,
+        "ci_high": 0.15868892875746743
+      },
+      "h_dose_units": {
+        "label": "Dose (units)",
+        "k": 6,
+        "n": 294,
+        "rate": 0.02040816326530612,
+        "ci_low": 0.00938599852758255,
+        "ci_high": 0.04380155596338228
+      },
+      "i_provider_type": {
+        "label": "Provider type",
+        "k": 7,
+        "n": 240,
+        "rate": 0.029166666666666667,
+        "ci_low": 0.014198730672500263,
+        "ci_high": 0.05896954393913429
+      },
+      "j_first_time_or_repeat": {
+        "label": "First or repeat treatment",
+        "k": 21,
+        "n": 187,
+        "rate": 0.11229946524064172,
+        "ci_low": 0.07463336079529975,
+        "ci_high": 0.16557366289845987
+      },
+      "j_prior_treatment_count": {
+        "label": "Prior treatment count",
+        "k": 33,
+        "n": 325,
+        "rate": 0.10153846153846154,
+        "ci_low": 0.07321778912561844,
+        "ci_high": 0.13916862672098032
+      },
+      "k_time_to_onset": {
+        "label": "Time to onset",
+        "k": 5,
+        "n": 249,
+        "rate": 0.020080321285140562,
+        "ci_low": 0.008606871341694324,
+        "ci_high": 0.0461367568799336
+      },
+      "l_duration_status": {
+        "label": "Duration status",
+        "k": 4,
+        "n": 227,
+        "rate": 0.01762114537444934,
+        "ci_low": 0.0068733176693157,
+        "ci_high": 0.04442361521782208
+      },
+      "m_sought_medical_attention": {
+        "label": "Sought medical attention",
+        "k": 17,
+        "n": 322,
+        "rate": 0.052795031055900624,
+        "ci_low": 0.0332206548338273,
+        "ci_high": 0.08291391858004185
+      },
+      "n_discontinuation_intent": {
+        "label": "Discontinuation intent",
+        "k": 7,
+        "n": 208,
+        "rate": 0.03365384615384615,
+        "ci_low": 0.016395766201128762,
+        "ci_high": 0.06782504175599266
+      },
+      "o_age_range": {
+        "label": "Age range",
+        "k": 7,
+        "n": 265,
+        "rate": 0.026415094339622643,
+        "ci_low": 0.012853173278658366,
+        "ci_high": 0.0535110657005447
+      },
+      "o_sex": {
+        "label": "Sex",
+        "k": 5,
+        "n": 283,
+        "rate": 0.0176678445229682,
+        "ci_low": 0.007569663162461916,
+        "ci_high": 0.04068507266826918
+      }
+    },
+    "stage3": {
+      "b_products_mentioned": {
+        "label": "Products mentioned",
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "c_indication_subtype": {
+        "label": "Indication subtype",
+        "k": 28,
+        "n": 67,
+        "rate": 0.417910447761194,
+        "ci_low": 0.30742300955672297,
+        "ci_high": 0.5373006849702071
+      },
+      "d_side_effect_pts": {
+        "label": "Side-effect list",
+        "k": 5,
+        "n": 247,
+        "rate": 0.020242914979757085,
+        "ci_low": 0.00867680741473062,
+        "ci_high": 0.04650330071320146
+      },
+      "f_sentiment_about_side_effect": {
+        "label": "Attitude toward side effect",
+        "k": 3,
+        "n": 247,
+        "rate": 0.012145748987854251,
+        "ci_low": 0.004139089434447867,
+        "ci_high": 0.03509469140450417
+      },
+      "g_treatment_area_freetext": {
+        "label": "Treatment area",
+        "k": 8,
+        "n": 159,
+        "rate": 0.050314465408805034,
+        "ci_low": 0.025712676114661923,
+        "ci_high": 0.09613257732624282
+      },
+      "h_dose_units": {
+        "label": "Dose (units)",
+        "k": 3,
+        "n": 341,
+        "rate": 0.008797653958944282,
+        "ci_low": 0.002996418481237639,
+        "ci_high": 0.02554266395493588
+      },
+      "i_provider_type": {
+        "label": "Provider type",
+        "k": 16,
+        "n": 314,
+        "rate": 0.050955414012738856,
+        "ci_low": 0.031605097211284794,
+        "ci_high": 0.0811601126945557
+      },
+      "j_first_time_or_repeat": {
+        "label": "First or repeat treatment",
+        "k": 16,
+        "n": 234,
+        "rate": 0.06837606837606838,
+        "ci_low": 0.04252280667717907,
+        "ci_high": 0.10817194182633809
+      },
+      "j_prior_treatment_count": {
+        "label": "Prior treatment count",
+        "k": 1,
+        "n": 334,
+        "rate": 0.0029940119760479044,
+        "ci_low": 0.0005287122877524648,
+        "ci_high": 0.016761820499682663
+      },
+      "k_time_to_onset": {
+        "label": "Time to onset",
+        "k": 5,
+        "n": 314,
+        "rate": 0.01592356687898089,
+        "ci_low": 0.00682027922401761,
+        "ci_high": 0.0367280321638388
+      },
+      "l_duration_status": {
+        "label": "Duration status",
+        "k": 7,
+        "n": 258,
+        "rate": 0.027131782945736434,
+        "ci_low": 0.013203521252335176,
+        "ci_high": 0.05493488166158894
+      },
+      "m_sought_medical_attention": {
+        "label": "Sought medical attention",
+        "k": 1,
+        "n": 332,
+        "rate": 0.0030120481927710845,
+        "ci_low": 0.0005318984881840603,
+        "ci_high": 0.01686160272279324
+      },
+      "n_discontinuation_intent": {
+        "label": "Discontinuation intent",
+        "k": 21,
+        "n": 346,
+        "rate": 0.06069364161849711,
+        "ci_low": 0.04003668202067403,
+        "ci_high": 0.09099827014086914
+      },
+      "o_age_range": {
+        "label": "Age range",
+        "k": 1,
+        "n": 294,
+        "rate": 0.003401360544217687,
+        "ci_low": 0.0006006761998509011,
+        "ci_high": 0.019011968875899912
+      },
+      "o_sex": {
+        "label": "Sex",
+        "k": 9,
+        "n": 328,
+        "rate": 0.027439024390243903,
+        "ci_low": 0.014501615166442616,
+        "ci_high": 0.05131734217033744
+      }
+    }
+  },
+  "coverage": {
+    "eligible": {
+      "submissions": 118762,
+      "communities": 13106,
+      "named_authors": 79545,
+      "median_body_characters": 637.0
+    },
+    "extracted": {
+      "submissions": 118747,
+      "communities": 13104,
+      "named_authors": 79535,
+      "median_body_characters": 637
+    }
+  },
+  "authors": {
+    "cosmetic|AutoModerator": 2,
+    "cosmetic|[deleted]": 56,
+    "cosmetic|all": 12716,
+    "medical|[deleted]": 99,
+    "medical|all": 20811,
+    "not_self_use|AutoModerator": 17,
+    "not_self_use|[deleted]": 668,
+    "not_self_use|all": 79364,
+    "unknown|[deleted]": 25,
+    "unknown|all": 5856
+  },
+  "automoderator_self_use": {
+    "cosmetic": 2
+  },
+  "unknown_stratum": {
+    "submissions": 5856,
+    "with_side_effect": 2735,
+    "noburp": {
+      "submissions": 1775,
+      "with_side_effect": 1389
+    },
+    "outside_noburp": {
+      "k": 1346,
+      "n": 4081,
+      "rate": 0.32982112227395244,
+      "ci_low": 0.3155626030978127,
+      "ci_high": 0.344399720041894
+    },
+    "top_communities": [
+      {
+        "community": "noburp",
+        "submissions": 1775,
+        "with_side_effect": 1389
+      },
+      {
+        "community": "migraine",
+        "submissions": 669,
+        "with_side_effect": 295
+      },
+      {
+        "community": "30plusskincare",
+        "submissions": 540,
+        "with_side_effect": 145
+      },
+      {
+        "community": "plasticsurgery",
+        "submissions": 253,
+        "with_side_effect": 67
+      },
+      {
+        "community": "botoxsupportcommunity",
+        "submissions": 226,
+        "with_side_effect": 130
+      },
+      {
+        "community": "tmj",
+        "submissions": 119,
+        "with_side_effect": 52
+      },
+      {
+        "community": "diyaesthetics",
+        "submissions": 99,
+        "with_side_effect": 17
+      },
+      {
+        "community": "analfissures",
+        "submissions": 96,
+        "with_side_effect": 70
+      }
+    ],
+    "verified_split": {
+      "noburp": {
+        "stays_unknown": 13,
+        "medical": 8
+      },
+      "other": {
+        "medical": 7,
+        "stays_unknown": 19,
+        "undetermined": 3,
+        "cosmetic": 14
+      }
+    },
+    "noburp_to_medical": {
+      "medical_k": 8236,
+      "medical_n": 22586,
+      "cosmetic_k": 4538,
+      "cosmetic_n": 12716,
+      "prevalence_medical": 0.3646506685557425,
+      "prevalence_cosmetic": 0.35687323057565273,
+      "difference": 0.007777437980089785,
+      "ci_low": -0.002669959629361729,
+      "ci_high": 0.0181835174959526
+    },
+    "verified_reallocation": {
+      "replicates": 2000,
+      "median": -0.011374863155586085,
+      "p2_5": -0.018786045727247038,
+      "p97_5": -0.0036509633539031053
+    }
+  },
+  "noburp_medical": {
+    "medical_self_use": 2588,
+    "any": {
+      "k": 1826,
+      "n": 2588,
+      "rate": 0.705564142194745,
+      "ci_low": 0.6877096377360125,
+      "ci_high": 0.722809299052709
+    },
+    "without_eructation": {
+      "k": 1768,
+      "n": 2588,
+      "rate": 0.6831530139103554,
+      "ci_low": 0.664968176753916,
+      "ci_high": 0.700794936099193
+    },
+    "without_excluded_terms": {
+      "k": 1740,
+      "n": 2588,
+      "rate": 0.6723338485316847,
+      "ci_low": 0.6540068709877483,
+      "ci_high": 0.6901499820343752
+    }
+  },
+  "vocabulary_yield": {
+    "self_use": 39383,
+    "any_raw": 14120,
+    "multiple_raw": 7886,
+    "any_cleaned": 13165,
+    "multiple_cleaned": 7276,
+    "only_excluded_terms_by_arm": {
+      "medical": 545,
+      "cosmetic": 254,
+      "unknown": 156
+    },
+    "attitude_raw": {
+      "n": 14120,
+      "distressed": {
+        "k": 11891,
+        "n": 14120,
+        "rate": 0.8421388101983003,
+        "ci_low": 0.8360318954966548,
+        "ci_high": 0.8480596123392561
+      },
+      "accepting": {
+        "k": 2124,
+        "n": 14120,
+        "rate": 0.15042492917847025,
+        "ci_low": 0.14462358095293154,
+        "ci_high": 0.15641643505243874
+      },
+      "dismissive": {
+        "k": 102,
+        "n": 14120,
+        "rate": 0.0072237960339943345,
+        "ci_low": 0.005954781150919884,
+        "ci_high": 0.00876086539797931
+      }
+    },
+    "attitude_cleaned": {
+      "n": 13165,
+      "distressed": {
+        "k": 11069,
+        "n": 13165,
+        "rate": 0.8407899734143562,
+        "ci_low": 0.8344408757942973,
+        "ci_high": 0.8469402485862189
+      },
+      "accepting": {
+        "k": 2002,
+        "n": 13165,
+        "rate": 0.15206988226357768,
+        "ci_low": 0.1460374945406777,
+        "ci_high": 0.15830525811173426
+      },
+      "dismissive": {
+        "k": 91,
+        "n": 13165,
+        "rate": 0.006912267375617166,
+        "ci_low": 0.005633742069317275,
+        "ci_high": 0.008478468135492702
+      }
+    },
+    "attitude_only_excluded": {
+      "n": 955,
+      "distressed": {
+        "k": 822,
+        "n": 955,
+        "rate": 0.8607329842931937,
+        "ci_low": 0.8373255821827966,
+        "ci_high": 0.8812499379531603
+      },
+      "accepting": {
+        "k": 122,
+        "n": 955,
+        "rate": 0.12774869109947645,
+        "ci_low": 0.10805874653102805,
+        "ci_high": 0.15042137710225884
+      },
+      "dismissive": {
+        "k": 11,
+        "n": 955,
+        "rate": 0.011518324607329843,
+        "ci_low": 0.006443646403748055,
+        "ci_high": 0.020507064355543954
+      }
+    }
+  },
+  "distinct_terms_cleaned": {
+    "medical_mean": 2.3303713106950172,
+    "cosmetic_mean": 2.0793650793650795,
+    "medical_single_term_share": 0.42589654078070455,
+    "cosmetic_single_term_share": 0.48902894491129784,
+    "u": 14576422.5,
+    "p": 1.263106782561289e-13,
+    "rank_biserial": 0.07982426547261245,
+    "medical_n": 6302,
+    "cosmetic_n": 4284
+  },
+  "jsd_bootstrap": {
+    "jsd": 0.37225243489453386,
+    "jsd_ci_low": 0.3631239508258115,
+    "jsd_ci_high": 0.40256973509487903,
+    "jsd_bootstrap_mean": 0.3822972431387607,
+    "jsd_basic_ci_low": 0.3419351346941887,
+    "jsd_basic_ci_high": 0.3813809189632562
+  },
+  "term_table": [
+    {
+      "rank": 1,
+      "term": "dysphagia",
+      "medical_per_100": 11.815393603037826,
+      "medical_records": 809,
+      "cosmetic_per_100": 0.617011899515205,
+      "cosmetic_records": 28,
+      "difference": 11.198381703522623,
+      "clustered_ci_low": 10.253966015547972,
+      "clustered_ci_high": 12.137958082410238,
+      "bh_q": 6.927282129522382e-144,
+      "restates_indication_or_intended_effect": false
+    },
+    {
+      "rank": 2,
+      "term": "pain",
+      "medical_per_100": 9.975171608003505,
+      "medical_records": 683,
+      "cosmetic_per_100": 1.366240634640811,
+      "cosmetic_records": 62,
+      "difference": 8.608930973362694,
+      "clustered_ci_low": 7.702039064129855,
+      "clustered_ci_high": 9.517414915820439,
+      "bh_q": 2.8097610983727085e-87,
+      "restates_indication_or_intended_effect": false
+    },
+    {
+      "rank": 3,
+      "term": "migraine",
+      "medical_per_100": 6.06104863443844,
+      "medical_records": 415,
+      "cosmetic_per_100": 0.7271925958572057,
+      "cosmetic_records": 33,
+      "difference": 5.333856038581234,
+      "clustered_ci_low": 4.67094516980059,
+      "clustered_ci_high": 6.0421488562766825,
+      "bh_q": 2.288114549299038e-55,
+      "restates_indication_or_intended_effect": true
+    },
+    {
+      "rank": 4,
+      "term": "facial asymmetry",
+      "medical_per_100": 1.3874689645100045,
+      "medical_records": 95,
+      "cosmetic_per_100": 6.478624944909652,
+      "cosmetic_records": 294,
+      "difference": -5.0911559803996465,
+      "clustered_ci_low": -5.971145499172721,
+      "clustered_ci_high": -4.209208789960288,
+      "bh_q": 1.841517410589234e-46,
+      "restates_indication_or_intended_effect": false
+    },
+    {
+      "rank": 5,
+      "term": "eyelid ptosis",
+      "medical_per_100": 0.8324813787060027,
+      "medical_records": 57,
+      "cosmetic_per_100": 5.597179374173645,
+      "cosmetic_records": 254,
+      "difference": -4.764697995467642,
+      "clustered_ci_low": -5.576870673476421,
+      "clustered_ci_high": -3.9731527064966237,
+      "bh_q": 2.2396894812522406e-51,
+      "restates_indication_or_intended_effect": false
+    },
+    {
+      "rank": 6,
+      "term": "eructation",
+      "medical_per_100": 4.366876004089383,
+      "medical_records": 299,
+      "cosmetic_per_100": 0.0,
+      "cosmetic_records": 0,
+      "difference": 4.366876004089383,
+      "clustered_ci_low": 3.831670066104191,
+      "clustered_ci_high": 4.897844995357599,
+      "bh_q": 5.483937974702329e-66,
+      "restates_indication_or_intended_effect": true
+    },
+    {
+      "rank": 7,
+      "term": "nausea",
+      "medical_per_100": 5.725135095662334,
+      "medical_records": 392,
+      "cosmetic_per_100": 1.4323490524460116,
+      "cosmetic_records": 65,
+      "difference": 4.292786043216322,
+      "clustered_ci_low": 3.551655321405912,
+      "clustered_ci_high": 5.12063821184213,
+      "bh_q": 7.24665818323193e-33,
+      "restates_indication_or_intended_effect": false
+    },
+    {
+      "rank": 8,
+      "term": "eyebrow ptosis",
+      "medical_per_100": 0.3943332846502117,
+      "medical_records": 27,
+      "cosmetic_per_100": 4.627589246364037,
+      "cosmetic_records": 210,
+      "difference": -4.233255961713825,
+      "clustered_ci_low": -5.0197610012896625,
+      "clustered_ci_high": -3.5011045680335053,
+      "bh_q": 1.4538029125730576e-54,
+      "restates_indication_or_intended_effect": false
+    },
+    {
+      "rank": 9,
+      "term": "abdominal distension",
+      "medical_per_100": 3.7534686724112754,
+      "medical_records": 257,
+      "cosmetic_per_100": 0.11018069634200088,
+      "cosmetic_records": 5,
+      "difference": 3.6432879760692747,
+      "clustered_ci_low": 3.1313509334371115,
+      "clustered_ci_high": 4.187693038848888,
+      "bh_q": 1.1056461437649226e-48,
+      "restates_indication_or_intended_effect": false
+    },
+    {
+      "rank": 10,
+      "term": "sore throat",
+      "medical_per_100": 3.7096538630056957,
+      "medical_records": 254,
+      "cosmetic_per_100": 0.17628911414720141,
+      "cosmetic_records": 8,
+      "difference": 3.533364748858494,
+      "clustered_ci_low": 3.078623151304738,
+      "clustered_ci_high": 3.996256734686222,
+      "bh_q": 1.6362621355896208e-44,
+      "restates_indication_or_intended_effect": false
+    },
+    {
+      "rank": 11,
+      "term": "injection site pain",
+      "medical_per_100": 6.046443697969914,
+      "medical_records": 414,
+      "cosmetic_per_100": 3.239312472454826,
+      "cosmetic_records": 147,
+      "difference": 2.807131225515088,
+      "clustered_ci_low": 1.9800061782659353,
+      "clustered_ci_high": 3.6622801207329556,
+      "bh_q": 1.8740145269886413e-11,
+      "restates_indication_or_intended_effect": false
+    },
+    {
+      "rank": 12,
+      "term": "neck pain",
+      "medical_per_100": 3.0962465313275884,
+      "medical_records": 212,
+      "cosmetic_per_100": 0.4186866460996034,
+      "cosmetic_records": 19,
+      "difference": 2.677559885227985,
+      "clustered_ci_low": 2.201356386747609,
+      "clustered_ci_high": 3.1736662796783888,
+      "bh_q": 9.985993388017255e-27,
+      "restates_indication_or_intended_effect": false
+    }
+  ],
+  "adjudication": {
+    "false_positives_reread": 9,
+    "annotator_votes": {
+      "No": 26,
+      "Can't tell": 1
+    },
+    "reclassified_as_true_positive": {},
+    "cells": {
+      "medical": {
+        "tp": 66,
+        "fp": 7,
+        "fn": 1,
+        "tn": 132
+      },
+      "cosmetic": {
+        "tp": 38,
+        "fp": 2,
+        "fn": 3,
+        "tn": 74
+      }
+    },
+    "sensitivity": {
+      "medical": 0.9850746268656716,
+      "cosmetic": 0.926829268292683
+    },
+    "ppv": {
+      "medical": 0.9041095890410958,
+      "cosmetic": 0.95
+    },
+    "sensitivity_ci": {
+      "medical": [
+        0.9201813768022187,
+        0.997360428265921
+      ],
+      "cosmetic": [
+        0.8057255146228096,
+        0.9748021693660901
+      ]
+    },
+    "ppv_ci": {
+      "medical": [
+        0.815043633098338,
+        0.9527710454031942
+      ],
+      "cosmetic": [
+        0.8349612263085903,
+        0.9861793326138516
+      ]
+    },
+    "correction": {
+      "observed_prevalence_medical": 0.32900869732353083,
+      "observed_prevalence_cosmetic": 0.35687323057565273,
+      "observed_difference": -0.027864533252121904,
+      "corrected_prevalence_medical": 0.3019668865846105,
+      "corrected_prevalence_cosmetic": 0.365795061340044,
+      "corrected_difference": -0.06382817475543351,
+      "corrected_difference_ci_low": -0.11321699913516192,
+      "corrected_difference_ci_high": -0.016823490476510498,
+      "share_of_replicates_negative": 0.996,
+      "replicates_used": 2000
+    },
+    "corrected_prevalence_range": {
+      "medical": [
+        0.2632069578588247,
+        0.34374043003950977
+      ],
+      "cosmetic": [
+        0.3033422459893048,
+        0.44609153821956593
+      ]
+    },
+    "unknown_verified_split": {
+      "noburp": {
+        "stays_unknown": 13,
+        "medical": 8
+      },
+      "other": {
+        "medical": 8,
+        "stays_unknown": 20,
+        "cosmetic": 14,
+        "undetermined": 1
+      }
+    },
+    "unknown_verified_reallocation": {
+      "replicates": 2000,
+      "median": -0.011474770985836796,
+      "p2_5": -0.01897519327408808,
+      "p97_5": -0.0037959585382123188
+    }
+  },
+  "batch_list_identity": {
+    "both_self_use": 319,
+    "same_term_set": 237,
+    "share_same": 0.7429467084639498
+  },
+  "full_corpus_agreement": {
+    "paired_records": 118747,
+    "self_use_agreement": 0.9296740128171659,
+    "self_use_kappa": 0.8391668600754248,
+    "presence_agreement": 0.9636622398881656,
+    "presence_kappa": 0.8169070457424507,
+    "term_set_exact": 0.6375113506546765,
+    "term_set_jaccard": 0.6888413735464353,
+    "full_record": 0.3832602086789561
+  }
+}

@@ -1,0 +1,3 @@
+indication,indication_label,self_use_records,side_effect_reporting_records,side_effect_report_prevalence,prevalence_ci_low,prevalence_ci_high,candidate_pt_mentions,mean_distinct_pts_per_report,median_distinct_pts_per_report,q1_distinct_pts_per_report,q3_distinct_pts_per_report
+medical,Medical,20811,6847,0.32900869732353083,0.3226571936460258,0.3354233152024319,16143,2.3576748941142105,2.0,1.0,3.0
+cosmetic,Cosmetic,12716,4538,0.35687323057565273,0.34859080129705006,0.3652421099240401,9476,2.088144557073601,2.0,1.0,3.0

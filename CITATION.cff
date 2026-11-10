@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code or these tables, please cite the article and this archive."
+title: "Botulinum toxin side effects on Reddit: code and aggregate results"
+type: software
+version: 1.0.0
+date-released: 2026-11-10
+license: MIT
+repository-code: "https://github.com/Haffi112/bonta-reddit-side-effects"
+authors:
+  - family-names: Einarsson
+    given-names: Hafsteinn
+    affiliation: University of Iceland
+  - family-names: Santos
+    given-names: Sölvi
+    affiliation: University of Iceland
+  - family-names: Örnólfsson
+    given-names: Kristján Sölvi
+    affiliation: University of Iceland
+  - family-names: Sverrisdóttir
+    given-names: Ragna María
+    affiliation: University of Iceland
+  - family-names: Benónísdóttir
+    given-names: Stefanía
+    affiliation: University of Iceland; University of Oxford
+keywords:
+  - pharmacovigilance
+  - botulinum toxin
+  - Reddit
+  - large language models

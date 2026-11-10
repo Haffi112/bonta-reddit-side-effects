@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Access key created · Extraction review{% endblock %}
+{% block header_actions %}<nav class="header-nav"><a href="{{ url_for('admin.dashboard') }}">Back to dashboard</a></nav>{% endblock %}
+{% block main_class %}auth-shell{% endblock %}
+{% block content %}
+  <section class="auth-card key-card">
+    <p class="eyebrow">Access granted</p>
+    <h1>{{ annotator.label }}</h1>
+    <p class="muted">Copy this key now. Only its one-way digest is stored, so it cannot be shown again.</p>
+    <div class="generated-key"><code data-copy-value>{{ access_key }}</code><button class="button button-secondary button-small" type="button" data-copy-button>Copy</button></div>
+    <p class="key-warning">Share it through an approved private channel. Rotating the key immediately invalidates this one.</p>
+    <a class="button button-primary" href="{{ url_for('admin.dashboard') }}">Return to dashboard</a>
+  </section>
+{% endblock %}
+

@@ -1,0 +1,3 @@
+release: flask --app eval_app:create_app init-db
+web: gunicorn --access-logfile - --error-logfile - "eval_app:create_app()"
+

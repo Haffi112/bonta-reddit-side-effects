@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Review complete · Extraction review{% endblock %}
+{% block header_actions %}
+  <nav class="header-nav">
+    <span class="user-pill">{{ annotator.label }}</span>
+    <a href="{{ url_for('review.history') }}">Recent reviews</a>
+    <form method="post" action="{{ url_for('auth.logout') }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button class="link-button" type="submit">Sign out</button>
+    </form>
+  </nav>
+{% endblock %}
+{% block main_class %}auth-shell{% endblock %}
+{% block content %}
+  <section class="auth-card complete-card">
+    <div class="complete-mark" aria-hidden="true">✓</div>
+    <p class="eyebrow">Comparison queue complete</p>
+    <h1>All {{ total }} submissions are reviewed</h1>
+    <p class="muted">Thank you. Both response reviews are saved for all {{ completed }} submissions.</p>
+    <a class="button button-secondary" href="{{ url_for('review.history') }}">View recent comparisons</a>
+  </section>
+{% endblock %}

@@ -1,0 +1,61 @@
+rank,candidate_pt,stage,approach,side_effect_reporting_records,records_with_candidate_pt,records_per_100_side_effect_reports
+1,pain,stage1,"DeepSeek V4 Flash, no reasoning",115,8,6.956521739130435
+1,pain,stage2,"DeepSeek V4 Flash, high reasoning",113,10,8.849557522123893
+1,pain,stage3,"GPT-5.6 Luna, low reasoning",133,13,9.774436090225564
+1,pain,stage4,"GPT-5.6 Luna, low reasoning, batch",138,14,10.144927536231885
+2,dysphagia,stage1,"DeepSeek V4 Flash, no reasoning",115,11,9.565217391304348
+2,dysphagia,stage2,"DeepSeek V4 Flash, high reasoning",113,11,9.734513274336283
+2,dysphagia,stage3,"GPT-5.6 Luna, low reasoning",133,9,6.7669172932330826
+2,dysphagia,stage4,"GPT-5.6 Luna, low reasoning, batch",138,10,7.246376811594203
+3,facial asymmetry,stage1,"DeepSeek V4 Flash, no reasoning",115,7,6.086956521739131
+3,facial asymmetry,stage2,"DeepSeek V4 Flash, high reasoning",113,9,7.964601769911504
+3,facial asymmetry,stage3,"GPT-5.6 Luna, low reasoning",133,8,6.015037593984962
+3,facial asymmetry,stage4,"GPT-5.6 Luna, low reasoning, batch",138,5,3.6231884057971016
+4,headache,stage1,"DeepSeek V4 Flash, no reasoning",115,6,5.217391304347826
+4,headache,stage2,"DeepSeek V4 Flash, high reasoning",113,6,5.3097345132743365
+4,headache,stage3,"GPT-5.6 Luna, low reasoning",133,6,4.511278195488722
+4,headache,stage4,"GPT-5.6 Luna, low reasoning, batch",138,6,4.3478260869565215
+5,eructation,stage1,"DeepSeek V4 Flash, no reasoning",115,<5,---
+5,eructation,stage2,"DeepSeek V4 Flash, high reasoning",113,5,4.424778761061947
+5,eructation,stage3,"GPT-5.6 Luna, low reasoning",133,8,6.015037593984962
+5,eructation,stage4,"GPT-5.6 Luna, low reasoning, batch",138,<5,---
+6,nausea,stage1,"DeepSeek V4 Flash, no reasoning",115,6,5.217391304347826
+6,nausea,stage2,"DeepSeek V4 Flash, high reasoning",113,<5,---
+6,nausea,stage3,"GPT-5.6 Luna, low reasoning",133,5,3.7593984962406015
+6,nausea,stage4,"GPT-5.6 Luna, low reasoning, batch",138,5,3.6231884057971016
+7,eyelid ptosis,stage1,"DeepSeek V4 Flash, no reasoning",115,6,5.217391304347826
+7,eyelid ptosis,stage2,"DeepSeek V4 Flash, high reasoning",113,5,4.424778761061947
+7,eyelid ptosis,stage3,"GPT-5.6 Luna, low reasoning",133,<5,---
+7,eyelid ptosis,stage4,"GPT-5.6 Luna, low reasoning, batch",138,<5,---
+8,throat tightness,stage1,"DeepSeek V4 Flash, no reasoning",115,5,4.3478260869565215
+8,throat tightness,stage2,"DeepSeek V4 Flash, high reasoning",113,6,5.3097345132743365
+8,throat tightness,stage3,"GPT-5.6 Luna, low reasoning",133,<5,---
+8,throat tightness,stage4,"GPT-5.6 Luna, low reasoning, batch",138,<5,---
+9,dyspnoea,stage1,"DeepSeek V4 Flash, no reasoning",115,<5,---
+9,dyspnoea,stage2,"DeepSeek V4 Flash, high reasoning",113,<5,---
+9,dyspnoea,stage3,"GPT-5.6 Luna, low reasoning",133,<5,---
+9,dyspnoea,stage4,"GPT-5.6 Luna, low reasoning, batch",138,<5,---
+10,injection site pain,stage1,"DeepSeek V4 Flash, no reasoning",115,<5,---
+10,injection site pain,stage2,"DeepSeek V4 Flash, high reasoning",113,0,0.0
+10,injection site pain,stage3,"GPT-5.6 Luna, low reasoning",133,<5,---
+10,injection site pain,stage4,"GPT-5.6 Luna, low reasoning, batch",138,7,5.072463768115942
+11,abdominal distension,stage1,"DeepSeek V4 Flash, no reasoning",115,<5,---
+11,abdominal distension,stage2,"DeepSeek V4 Flash, high reasoning",113,<5,---
+11,abdominal distension,stage3,"GPT-5.6 Luna, low reasoning",133,<5,---
+11,abdominal distension,stage4,"GPT-5.6 Luna, low reasoning, batch",138,5,3.6231884057971016
+12,neck pain,stage1,"DeepSeek V4 Flash, no reasoning",115,<5,---
+12,neck pain,stage2,"DeepSeek V4 Flash, high reasoning",113,<5,---
+12,neck pain,stage3,"GPT-5.6 Luna, low reasoning",133,<5,---
+12,neck pain,stage4,"GPT-5.6 Luna, low reasoning, batch",138,<5,---
+13,flatulence,stage1,"DeepSeek V4 Flash, no reasoning",115,<5,---
+13,flatulence,stage2,"DeepSeek V4 Flash, high reasoning",113,<5,---
+13,flatulence,stage3,"GPT-5.6 Luna, low reasoning",133,<5,---
+13,flatulence,stage4,"GPT-5.6 Luna, low reasoning, batch",138,<5,---
+14,vomiting,stage1,"DeepSeek V4 Flash, no reasoning",115,<5,---
+14,vomiting,stage2,"DeepSeek V4 Flash, high reasoning",113,<5,---
+14,vomiting,stage3,"GPT-5.6 Luna, low reasoning",133,<5,---
+14,vomiting,stage4,"GPT-5.6 Luna, low reasoning, batch",138,<5,---
+15,muscle weakness,stage1,"DeepSeek V4 Flash, no reasoning",115,<5,---
+15,muscle weakness,stage2,"DeepSeek V4 Flash, high reasoning",113,<5,---
+15,muscle weakness,stage3,"GPT-5.6 Luna, low reasoning",133,<5,---
+15,muscle weakness,stage4,"GPT-5.6 Luna, low reasoning, batch",138,<5,---

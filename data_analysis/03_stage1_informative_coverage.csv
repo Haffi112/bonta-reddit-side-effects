@@ -1,0 +1,13 @@
+field,field_label,denominator,informative_records,informative_percent,excluded_values
+c_indication_subtype,Indication subtype,37246,33725,90.546635880363,"[""not_reported""]"
+g_treatment_area_freetext,Treatment area,37246,20273,54.430005906674545,"[""not_reported""]"
+h_dose_units,Dose units,37246,3747,10.060140686248188,"[""not_reported""]"
+i_provider_type,Provider type,37246,7599,20.402190839284756,"[""not_reported"", ""unspecified""]"
+j_first_time_or_repeat,First or repeat treatment,37246,16062,43.12409386242818,"[""not_reported""]"
+j_prior_treatment_count,Prior treatment count,37246,1340,3.5977017666326585,"[""not_reported""]"
+k_time_to_onset,Time to onset,37246,5605,15.048595822370187,"[""not_reported"", ""unspecified""]"
+l_duration_status,Duration status,37246,6303,16.922622563496752,"[""not_reported"", ""unspecified""]"
+m_sought_medical_attention,Sought medical attention,37246,1603,4.303817859635934,"[""not_reported""]"
+n_discontinuation_intent,Discontinuation intent,37246,7705,20.686785158137788,"[""not_reported"", ""unclear""]"
+o_age_range,Age range,37246,8439,22.657466573591794,"[""not_reported""]"
+o_sex,Sex,37246,5783,15.526499489878107,"[""not_reported""]"

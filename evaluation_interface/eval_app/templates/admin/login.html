@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Administrator sign in · Extraction review{% endblock %}
+{% block main_class %}auth-shell{% endblock %}
+{% block content %}
+  <section class="auth-card">
+    <p class="eyebrow">Study administration</p>
+    <h1>Administrator sign in</h1>
+    <p class="muted">Use the administrator key configured in the deployment environment.</p>
+    <form method="post" class="stack-form">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label for="admin_key">Admin key</label>
+      <input id="admin_key" name="admin_key" type="password" autocomplete="current-password" autofocus required {% if not configured %}disabled{% endif %}>
+      <button class="button button-primary" type="submit" {% if not configured %}disabled{% endif %}>Sign in</button>
+    </form>
+    {% if not configured %}<p class="config-warning">Set <code>ADMIN_KEY</code> before using the admin interface.</p>{% endif %}
+    <a class="quiet-link" href="{{ url_for('auth.login') }}">Annotator sign in</a>
+  </section>
+{% endblock %}
+

@@ -1,0 +1,3 @@
+field,field_label,self_use_records,reported_records,reporting_rate,mean,standard_deviation,median,q1,q3
+h_dose_units,Dose units,37246,3747,0.10060140686248188,64.90018681611956,70.41319334908707,50.0,25.0,90.0
+j_prior_treatment_count,Prior treatment count,37246,1340,0.035977017666326584,2.4238805970149255,3.4622940480772852,2.0,1.0,3.0

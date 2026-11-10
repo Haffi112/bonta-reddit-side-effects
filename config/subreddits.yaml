@@ -1,0 +1,24 @@
+# Candidate set. Inventory step (Task 2.3) drops any with <50 matching posts.
+medical:
+  - migraine
+  - ChronicMigraine
+  - dystonia
+  - Hyperhidrosis
+  - OveractiveBladder
+  - Blepharospasm
+  - TMJ
+  - Strabismus
+  - ChronicPain
+  - Stroke
+
+cosmetic:
+  - Botox
+  - 30PlusSkinCare
+  - SkincareAddiction
+  - PlasticSurgery
+  - CosmeticSurgery
+
+mixed:
+  - AskDocs
+
+min_posts_threshold: 50

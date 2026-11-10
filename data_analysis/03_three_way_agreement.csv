@@ -1,0 +1,41 @@
+field,field_label,field_kind,scope,applicability_rule,n,unanimous_exact_agreement,exact_ci_low,exact_ci_high,secondary_metric,secondary_value
+a_self_use,Self-use,scalar,all,all,1165,0.9012875536480687,0.8828182386846832,0.917119163384688,fleiss_kappa,0.8712849134719548
+a_self_use,Self-use,scalar,applicable,all,1165,0.9012875536480687,0.8828182386846832,0.917119163384688,fleiss_kappa,0.8712849134719548
+b_products_mentioned,Products mentioned,set,all,self_use,1165,0.8618025751072962,0.8407933331329538,0.8804336507648858,mean_pairwise_jaccard,0.9105865522174534
+b_products_mentioned,Products mentioned,set,applicable,self_use,309,0.8511326860841424,0.8071417871873985,0.8865002921521372,mean_pairwise_jaccard,0.912621359223301
+c_indication_category,Indication category,scalar,all,self_use,1165,0.8678111587982833,0.8471478175227944,0.8860568387054955,fleiss_kappa,0.828146215012582
+c_indication_category,Indication category,scalar,applicable,self_use,309,0.8252427184466019,0.7789780833492633,0.8635198795412743,fleiss_kappa,0.8206327041490963
+c_indication_subtype,Indication subtype,scalar,all,self_use,1165,0.8326180257510729,0.8100952949695132,0.852954423323281,fleiss_kappa,0.7832322456844344
+c_indication_subtype,Indication subtype,scalar,applicable,self_use,309,0.6893203883495146,0.6356624353732622,0.738328916160036,fleiss_kappa,0.7830045295171021
+side_effect_presence,Any side effect,scalar,all,all,1165,0.9424892703862661,0.927609035185009,0.9544609771503081,fleiss_kappa,0.8286824389787341
+side_effect_presence,Any side effect,scalar,applicable,all,1165,0.9424892703862661,0.927609035185009,0.9544609771503081,fleiss_kappa,0.8286824389787341
+d_side_effect_pts,Candidate side-effect PTs,set,all,self_use,1165,0.871244635193133,0.8507848304063889,0.8892642100107299,mean_pairwise_jaccard,0.9087014953016361
+d_side_effect_pts,Candidate side-effect PTs,set,applicable,self_use,309,0.5598705501618123,0.504123218044232,0.614147551244076,mean_pairwise_jaccard,0.6870676656733746
+e1_post_overall_sentiment,Overall sentiment,scalar,all,all,1165,0.5768240343347639,0.5482465615364309,0.6048965346886144,fleiss_kappa,0.6124671434627624
+e1_post_overall_sentiment,Overall sentiment,scalar,applicable,all,1165,0.5768240343347639,0.5482465615364309,0.6048965346886144,fleiss_kappa,0.6124671434627624
+e2_sentiment_about_botox,Sentiment about BoNT-A,scalar,all,all,1165,0.551931330472103,0.5232509400084837,0.5802703708475525,fleiss_kappa,0.5704168396404573
+e2_sentiment_about_botox,Sentiment about BoNT-A,scalar,applicable,all,1165,0.551931330472103,0.5232509400084837,0.5802703708475525,fleiss_kappa,0.5704168396404573
+f_sentiment_about_side_effect,Side-effect sentiment,scalar,all,side_effect,1165,0.9287553648068669,0.9125322917855105,0.9421601837944913,fleiss_kappa,0.7824530026346437
+f_sentiment_about_side_effect,Side-effect sentiment,scalar,applicable,side_effect,91,0.8241758241758241,0.7333161024339296,0.8887747082055877,fleiss_kappa,0.669357464822527
+g_treatment_area_freetext,Treatment area,scalar,all,self_use,1165,0.8274678111587983,0.804703730844908,0.8480794111646431,fleiss_kappa,0.6492669514331572
+g_treatment_area_freetext,Treatment area,scalar,applicable,self_use,309,0.5242718446601942,0.4686324311369231,0.5793151780340126,fleiss_kappa,0.6086743906108938
+h_dose_units,Dose units,scalar,all,self_use,1165,0.9802575107296138,0.9705492322901574,0.9868090061222772,fleiss_kappa,0.8248173654176347
+h_dose_units,Dose units,scalar,applicable,self_use,309,0.9288025889967637,0.8945591078408573,0.9525153208456724,fleiss_kappa,0.8228840664442686
+i_provider_type,Provider type,scalar,all,self_use,1165,0.9055793991416309,0.887429943234886,0.9210629390705212,fleiss_kappa,0.5844634510637351
+i_provider_type,Provider type,scalar,applicable,self_use,309,0.7313915857605178,0.6793524109609654,0.7777481298019544,fleiss_kappa,0.5926991185833348
+j_first_time_or_repeat,First or repeat treatment,scalar,all,self_use,1165,0.8849785407725322,0.8653790569920649,0.9020475201803694,fleiss_kappa,0.7229999882956994
+j_first_time_or_repeat,First or repeat treatment,scalar,applicable,self_use,309,0.6925566343042071,0.6390051473527013,0.7413792187367215,fleiss_kappa,0.6974066873585955
+j_prior_treatment_count,Prior treatment count,scalar,all,self_use,1165,0.9476394849785408,0.9333137428218807,0.9590228457966798,fleiss_kappa,0.36040274984975124
+j_prior_treatment_count,Prior treatment count,scalar,applicable,self_use,309,0.8122977346278317,0.7650242080893237,0.851901696576715,fleiss_kappa,0.3418959447124784
+k_time_to_onset,Time to onset,scalar,all,self_use,1165,0.8798283261802575,0.8598972017279166,0.8972627991612744,fleiss_kappa,0.5042074252709667
+k_time_to_onset,Time to onset,scalar,applicable,self_use,309,0.5857605177993528,0.530112484446169,0.6393024012911371,fleiss_kappa,0.4488692027386692
+l_duration_status,Duration status,scalar,all,self_use,1165,0.8454935622317596,0.8236065621392897,0.8651095968616126,fleiss_kappa,0.5498765369642837
+l_duration_status,Duration status,scalar,applicable,self_use,309,0.4692556634304207,0.4143308412494637,0.5249355204673511,fleiss_kappa,0.4452652696376985
+m_sought_medical_attention,Sought medical attention,scalar,all,self_use,1165,0.9493562231759657,0.9352225683776672,0.9605362123353078,fleiss_kappa,0.43588691348429803
+m_sought_medical_attention,Sought medical attention,scalar,applicable,self_use,309,0.8284789644012945,0.7824791953190889,0.8664117821275735,fleiss_kappa,0.42049347791921965
+n_discontinuation_intent,Discontinuation intent,scalar,all,self_use,1165,0.8025751072961373,0.7787391030600844,0.8244222535804574,fleiss_kappa,0.3505199082504356
+n_discontinuation_intent,Discontinuation intent,scalar,applicable,self_use,309,0.343042071197411,0.2923289345712016,0.3976098594567479,fleiss_kappa,0.2176885100637156
+o_age_range,Age range,scalar,all,self_use,1165,0.9690987124463519,0.9575172089355372,0.9775967808632037,fleiss_kappa,0.8681404923696585
+o_age_range,Age range,scalar,applicable,self_use,309,0.9546925566343042,0.9253962355623883,0.9728223095731395,fleiss_kappa,0.9285324874857513
+o_sex,Sex,scalar,all,self_use,1165,0.9725321888412017,0.9614814726396024,0.9804769013479673,fleiss_kappa,0.8357055079538602
+o_sex,Sex,scalar,applicable,self_use,309,0.9385113268608414,0.9059678963396856,0.9602855760152185,fleiss_kappa,0.8769806111810003

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Recent comparisons · Extraction review{% endblock %}
+{% block header_actions %}
+  <nav class="header-nav">
+    <span class="user-pill">{{ annotator.label }}</span>
+    <a href="{{ url_for('review.next_item') }}">Continue reviewing</a>
+    <form method="post" action="{{ url_for('auth.logout') }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button class="link-button" type="submit">Sign out</button>
+    </form>
+  </nav>
+{% endblock %}
+{% block content %}
+  <section class="page-heading">
+    <div><p class="eyebrow">Your work</p><h1>Recent comparisons</h1></div>
+    <div class="metric-inline"><strong>{{ completed }}</strong><span>of {{ total }} complete</span></div>
+  </section>
+  <div class="card table-card">
+    {% if history_items %}
+      <table>
+        <thead><tr><th>Comparison</th><th>Saved</th><th>Responses</th><th>Decisions</th><th></th></tr></thead>
+        <tbody>
+          {% for item in history_items %}
+            <tr>
+              <td><code>{{ item.blinded_id }}</code></td>
+              <td>{{ item.submitted_at.strftime('%Y-%m-%d %H:%M') }}</td>
+              <td>{{ item.responses }} / 2</td>
+              <td>{{ item.correct }} correct / {{ item.decisions }}</td>
+              <td><a href="{{ url_for('review.item', blinded_id=item.blinded_id) }}">Revisit</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <div class="empty-state"><p>No saved comparisons yet.</p></div>
+    {% endif %}
+  </div>
+{% endblock %}

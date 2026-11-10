@@ -1,0 +1,21 @@
+stage,approach,outcome,outcome_label,n,count,prevalence,ci_low,ci_high
+stage1,"DeepSeek V4 Flash, no reasoning",self_use,Self-use,1165,355,0.30472103004291845,0.278967350779201,0.33175829848115834
+stage1,"DeepSeek V4 Flash, no reasoning",side_effect_report,Side-effect report,1165,115,0.09871244635193133,0.08288083661531193,0.11718176131531682
+stage1,"DeepSeek V4 Flash, no reasoning",medical_indication,Medical indication,1165,203,0.1742489270386266,0.15354716051567852,0.19709188956918477
+stage1,"DeepSeek V4 Flash, no reasoning",cosmetic_indication,Cosmetic indication,1165,122,0.10472103004291845,0.08841851933602646,0.12362175092505279
+stage1,"DeepSeek V4 Flash, no reasoning",multiple_side_effects,Multiple side effects,1165,52,0.04463519313304721,0.03419913511501946,0.058064411841555016
+stage2,"DeepSeek V4 Flash, high reasoning",self_use,Self-use,1165,359,0.30815450643776826,0.2823071937117502,0.33526283973743803
+stage2,"DeepSeek V4 Flash, high reasoning",side_effect_report,Side-effect report,1165,113,0.09699570815450644,0.08130211437765414,0.1153382914585602
+stage2,"DeepSeek V4 Flash, high reasoning",medical_indication,Medical indication,1165,206,0.17682403433476396,0.15598845637797967,0.1997838818485053
+stage2,"DeepSeek V4 Flash, high reasoning",cosmetic_indication,Cosmetic indication,1165,122,0.10472103004291845,0.08841851933602646,0.12362175092505279
+stage2,"DeepSeek V4 Flash, high reasoning",multiple_side_effects,Multiple side effects,1165,50,0.04291845493562232,0.0327050204447451,0.056136334417414946
+stage3,"GPT-5.6 Luna, low reasoning",self_use,Self-use,1165,384,0.3296137339055794,0.30321934429811903,0.3571280903312495
+stage3,"GPT-5.6 Luna, low reasoning",side_effect_report,Side-effect report,1165,133,0.11416309012875536,0.09715613489312752,0.13370619188723104
+stage3,"GPT-5.6 Luna, low reasoning",medical_indication,Medical indication,1165,204,0.17510729613733905,0.15436073513124926,0.19798941100082124
+stage3,"GPT-5.6 Luna, low reasoning",cosmetic_indication,Cosmetic indication,1165,117,0.10042918454935622,0.08446113141447607,0.11902365861056712
+stage3,"GPT-5.6 Luna, low reasoning",multiple_side_effects,Multiple side effects,1165,66,0.05665236051502146,0.044776557993052066,0.07144233362442337
+stage4,"GPT-5.6 Luna, low reasoning, batch",self_use,Self-use,1165,375,0.3218884120171674,0.29568350594447124,0.3492640642600324
+stage4,"GPT-5.6 Luna, low reasoning, batch",side_effect_report,Side-effect report,1165,138,0.1184549356223176,0.10114104678850112,0.1382767602278935
+stage4,"GPT-5.6 Luna, low reasoning, batch",medical_indication,Medical indication,1165,204,0.17510729613733905,0.15436073513124926,0.19798941100082124
+stage4,"GPT-5.6 Luna, low reasoning, batch",cosmetic_indication,Cosmetic indication,1165,116,0.09957081545064378,0.08367078969500699,0.11810290428282899
+stage4,"GPT-5.6 Luna, low reasoning, batch",multiple_side_effects,Multiple side effects,1165,74,0.06351931330472103,0.0508983281416075,0.07900933185352561

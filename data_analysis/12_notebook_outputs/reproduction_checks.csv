@@ -1,0 +1,332 @@
+quantity,paper,recomputed,result
+Matched submissions,171895.0,171895.0,PASS
+Matched submissions carrying text,121019.0,121019.0,PASS
+Submissions selected by bonta,2258.0,2258.0,PASS
+Submissions selected by bonta alone (excluded),2257.0,2257.0,PASS
+Submissions eligible for extraction,118762.0,118762.0,PASS
+Link or image posts that carry a body,19203.0,19203.0,PASS
+Median body length of those posts (characters),415.0,415.0,PASS
+Communities with at least one matching submission with text,13513.0,13513.0,PASS
+Distinct named authors across submissions with text,80700.0,80700.0,PASS
+Median body length (characters),640.0,640.0,PASS
+Nested 10% sample size,11876.0,11876.0,PASS
+Nested 1% sample size,1187.0,1187.0,PASS
+Primary extractions returned,118747.0,118747.0,PASS
+Primary extractions rejected by the provider,15.0,15.0,PASS
+Rating units,45444.0,45444.0,PASS
+Field decisions,136332.0,136332.0,PASS
+Unanimous rating units (%),94.2,94.199,PASS
+Mean pairwise agreement (%),96.1,96.133,PASS
+Fleiss' kappa,0.541,0.54095,PASS
+Prevalence-adjusted bias-adjusted kappa,0.92,0.9227,PASS
+DeepSeek V4 Flash: fields judged correct (%),94.9,94.901,PASS
+GPT-5.6 Luna: fields judged correct (%),97.1,97.115,PASS
+"Self-use accuracy, DeepSeek (%)",93.3,93.322,PASS
+"Self-use accuracy, GPT-5.6 Luna (%)",99.2,99.229,PASS
+Self-use discordant pairs favouring Luna,75.0,75.0,PASS
+"Product-list accuracy, GPT-5.6 Luna (%)",99.3,99.315,PASS
+DeepSeek self-use decisions judged wrong,78.0,78.0,PASS
+... of which the model said 'not self-use',54.0,54.0,PASS
+DeepSeek V4 Flash: raw_span judged correct (%),87.4,87.448,PASS
+GPT-5.6 Luna: raw_span judged correct (%),90.0,90.034,PASS
+DeepSeek V4 Flash: meddra_pt judged correct (%),85.4,85.356,PASS
+GPT-5.6 Luna: meddra_pt judged correct (%),89.0,89.003,PASS
+Luna non-empty side-effect lists judged correct,108.0,108.0,PASS
+Luna non-empty side-effect lists,136.0,136.0,PASS
+Luna medical self-use outputs,206.0,206.0,PASS
+Luna cosmetic self-use outputs,117.0,117.0,PASS
+"Luna sensitivity, medical (%)",98.5,98.507,PASS
+"Luna sensitivity, cosmetic (%)",92.7,92.683,PASS
+"Luna PPV, medical (%)",90.4,90.411,PASS
+"Luna PPV, cosmetic (%)",95.0,95.0,PASS
+Luna 'unknown' indication judged correct (%),50.0,50.0,PASS
+Self-use submissions,39383.0,39383.0,PASS
+Self-use share of extracted submissions (%),33.2,33.165,PASS
+Submissions reporting a candidate side effect,14120.0,14120.0,PASS
+... as a share of all submissions (%),11.9,11.891,PASS
+... as a share of self-use submissions (%),35.9,35.853,PASS
+Submissions reporting more than one side effect,7886.0,7886.0,PASS
+medical self-use submissions,20811.0,20811.0,PASS
+medical share of self-use (%),52.8,52.843,PASS
+cosmetic self-use submissions,12716.0,12716.0,PASS
+cosmetic share of self-use (%),32.3,32.288,PASS
+unknown self-use submissions,5856.0,5856.0,PASS
+unknown share of self-use (%),14.9,14.869,PASS
+Side-effect reports expressing 'distressed' (%),84.2,84.214,PASS
+Side-effect reports expressing 'accepting' (%),15.0,15.042,PASS
+Side-effect reports expressing 'dismissive' (%),0.7,0.722,PASS
+Disclosed: c_indication_subtype (%),84.8,84.811,PASS
+Disclosed: g_treatment_area_freetext (%),54.4,54.442,PASS
+Disclosed: j_first_time_or_repeat (%),39.5,39.451,PASS
+Disclosed: i_provider_type (%),13.8,13.772,PASS
+Disclosed: k_time_to_onset (%),12.9,12.94,PASS
+Disclosed: m_sought_medical_attention (%),9.4,9.43,PASS
+Disclosed: h_dose_units (%),8.5,8.542,PASS
+Self-use submissions stating a dose,3364.0,3364.0,PASS
+Median dose (units),50.0,50.0,PASS
+Dose lower quartile (units),25.0,25.0,PASS
+Dose upper quartile (units),100.0,100.0,PASS
+Self-use submissions naming 'dysphagia',1286.0,1286.0,PASS
+Self-use submissions naming 'pain',878.0,878.0,PASS
+Self-use submissions naming 'headache',758.0,758.0,PASS
+Self-use submissions naming 'eructation',731.0,731.0,PASS
+Self-use submissions naming 'injection site pain',715.0,715.0,PASS
+Self-use submissions naming Botox,37258.0,37258.0,PASS
+Self-use submissions naming Dysport,1578.0,1578.0,PASS
+Named authors of extracted submissions,79535.0,79535.0,PASS
+Authors with a single submission (%),78.6,78.603,PASS
+"Submissions by repeat posters, of those with a named author (%)",47.0,46.966,PASS
+Supplementary Table 2 stage1 vs stage2: paired n,11824.0,11824.0,PASS
+Supplementary Table 2 stage1 vs stage2: self-use kappa,0.871,0.87063,PASS
+Supplementary Table 2 stage1 vs stage2: any-effect kappa,0.851,0.85115,PASS
+Supplementary Table 2 stage1 vs stage2: term-set exact,0.701,0.70096,PASS
+Supplementary Table 2 stage1 vs stage2: mean Jaccard,0.752,0.75232,PASS
+Supplementary Table 2 stage1 vs stage2: full record,0.521,0.52089,PASS
+Supplementary Table 2 stage1 vs stage3: paired n,1168.0,1168.0,PASS
+Supplementary Table 2 stage1 vs stage3: self-use kappa,0.84,0.84048,PASS
+Supplementary Table 2 stage1 vs stage3: any-effect kappa,0.806,0.80576,PASS
+Supplementary Table 2 stage1 vs stage3: term-set exact,0.639,0.63855,PASS
+Supplementary Table 2 stage1 vs stage3: mean Jaccard,0.687,0.68697,PASS
+Supplementary Table 2 stage1 vs stage3: full record,0.413,0.41267,PASS
+Supplementary Table 2 stage2 vs stage3: paired n,1165.0,1165.0,PASS
+Supplementary Table 2 stage2 vs stage3: self-use kappa,0.848,0.84793,PASS
+Supplementary Table 2 stage2 vs stage3: any-effect kappa,0.773,0.77293,PASS
+Supplementary Table 2 stage2 vs stage3: term-set exact,0.64,0.63964,PASS
+Supplementary Table 2 stage2 vs stage3: mean Jaccard,0.683,0.68315,PASS
+Supplementary Table 2 stage2 vs stage3: full record,0.412,0.41202,PASS
+Supplementary Table 2 stage1 vs stage4: paired n,11825.0,11825.0,PASS
+Supplementary Table 2 stage1 vs stage4: self-use kappa,0.843,0.84315,PASS
+Supplementary Table 2 stage1 vs stage4: any-effect kappa,0.808,0.80774,PASS
+Supplementary Table 2 stage1 vs stage4: term-set exact,0.635,0.63544,PASS
+Supplementary Table 2 stage1 vs stage4: mean Jaccard,0.684,0.68425,PASS
+Supplementary Table 2 stage1 vs stage4: full record,0.383,0.38258,PASS
+Supplementary Table 2 stage2 vs stage4: paired n,11822.0,11822.0,PASS
+Supplementary Table 2 stage2 vs stage4: self-use kappa,0.854,0.85362,PASS
+Supplementary Table 2 stage2 vs stage4: any-effect kappa,0.793,0.7926,PASS
+Supplementary Table 2 stage2 vs stage4: term-set exact,0.641,0.64087,PASS
+Supplementary Table 2 stage2 vs stage4: mean Jaccard,0.69,0.69049,PASS
+Supplementary Table 2 stage2 vs stage4: full record,0.414,0.41355,PASS
+Supplementary Table 2 stage3 vs stage4: paired n,1168.0,1168.0,PASS
+Supplementary Table 2 stage3 vs stage4: self-use kappa,0.967,0.96696,PASS
+Supplementary Table 2 stage3 vs stage4: any-effect kappa,0.955,0.95495,PASS
+Supplementary Table 2 stage3 vs stage4: term-set exact,0.741,0.74064,PASS
+Supplementary Table 2 stage3 vs stage4: mean Jaccard,0.788,0.78849,PASS
+Supplementary Table 2 stage3 vs stage4: full record,0.515,0.51455,PASS
+"Full-corpus agreement, a_self_use (%)",93.0,92.967,PASS
+"Full-corpus kappa, a_self_use",0.839,0.83917,PASS
+"Full-corpus agreement, side_effect_presence (%)",96.4,96.366,PASS
+"Full-corpus kappa, side_effect_presence",0.817,0.81691,PASS
+Records completed by all three interactive configurations,1165.0,1165.0,PASS
+Lowest self-use share across configurations (%),30.5,30.472,PASS
+Highest self-use share across configurations (%),33.0,32.961,PASS
+Lowest side-effect share across configurations (%),9.7,9.7,PASS
+Highest side-effect share across configurations (%),11.4,11.416,PASS
+Additional self-use submissions found by GPT-5.6 Luna,2137.0,2137.0,PASS
+"Verbatim spans, stage1 (%)",94.2,94.224,PASS
+"Cost, stage1 (US$)",26.34,26.3442,PASS
+"Verbatim spans, stage2 (%)",92.7,92.692,PASS
+"Cost, stage2 (US$)",3.59,3.5921,PASS
+"Verbatim spans, stage3 (%)",99.0,98.969,PASS
+"Cost, stage3 (US$)",4.77,4.7697,PASS
+"Verbatim spans, stage4 (%)",98.6,98.613,PASS
+"Cost, stage4 (US$)",26.6,26.5996,PASS
+Batch-run prompt-cache coverage (%),86.8,86.795,PASS
+Unknown-indication submissions reporting a side effect,2735.0,2735.0,PASS
+... share (%),46.7,46.704,PASS
+... lower 95% bound (%),45.4,45.429,PASS
+... upper 95% bound (%),48.0,47.984,PASS
+medical submissions reporting a side effect,6847.0,6847.0,PASS
+medical prevalence (%),32.9,32.901,PASS
+cosmetic submissions reporting a side effect,4538.0,4538.0,PASS
+cosmetic prevalence (%),35.7,35.687,PASS
+Prevalence difference (percentage points),-2.79,-2.7865,PASS
+... lower 95% bound,-3.84,-3.8371,PASS
+... upper 95% bound,-1.74,-1.7389,PASS
+Risk ratio,0.92,0.9219,PASS
+Pearson chi-square,27.3,27.327,PASS
+Chi-square P (x 10^-7),1.7,1.718,PASS
+Terms in the primary profile test,221.0,221.0,PASS
+Jensen-Shannon divergence,0.372,0.37225,PASS
+Permutation-null mean,0.009,0.00901,PASS
+Permutation P (x 10^-4),1.0,1.0,PASS
+Terms in the all-term test,3075.0,3075.0,PASS
+All-term divergence,0.454,0.45397,PASS
+All-term null mean,0.115,0.11536,PASS
+Mann-Whitney U,16861852.5,16861852.5,PASS
+Rank-biserial correlation,0.085,0.08535,PASS
+Mean terms per medical report,2.36,2.3577,PASS
+Mean terms per cosmetic report,2.09,2.0881,PASS
+Median terms per report (both groups),2.0,2.0,PASS
+Medical reports naming a single term (%),42.2,42.194,PASS
+Cosmetic reports naming a single term (%),48.7,48.7,PASS
+Terms tested,221.0,221.0,PASS
+Terms significant at a 5% false discovery rate,163.0,163.0,PASS
+"Difference per 100 reports, dysphagia",11.2,11.1984,PASS
+"Difference per 100 reports, pain",8.61,8.6089,PASS
+"Difference per 100 reports, migraine",5.33,5.3339,PASS
+"Difference per 100 reports, facial asymmetry",-5.09,-5.0912,PASS
+"Difference per 100 reports, eyelid ptosis",-4.76,-4.7647,PASS
+"Difference per 100 reports, eructation",4.37,4.3669,PASS
+"Difference per 100 reports, nausea",4.29,4.2928,PASS
+"Difference per 100 reports, eyebrow ptosis",-4.23,-4.2333,PASS
+one per author (smallest id): difference (pp),-1.49,-1.4853,PASS
+one per author (smallest id): divergence,0.359,0.35936,PASS
+one per author (smallest id): terms,174.0,174.0,PASS
+without r/noburp: difference (pp),-8.14,-8.1359,PASS
+without r/noburp: divergence,0.273,0.27264,PASS
+without r/noburp: terms,191.0,191.0,PASS
+terms excluded and merged: difference (pp),-3.85,-3.8545,PASS
+terms excluded and merged: divergence,0.365,0.36498,PASS
+terms excluded and merged: terms,212.0,212.0,PASS
+"Clustered 95% interval, lower (pp)",-4.08,-4.0791,PASS
+"Clustered 95% interval, upper (pp)",-1.44,-1.442,PASS
+Design effect,1.59,1.5881,PASS
+Clustered P (x 10^-5),3.6,3.621,PASS
+"Clustered divergence interval, lower",0.363,0.36312,PASS
+"Clustered divergence interval, upper",0.403,0.40257,PASS
+Terms significant with clustered standard errors,159.0,159.0,PASS
+Random author draws: median difference (pp),-1.93,-1.9291,PASS
+... 2.5th percentile (pp),-2.29,-2.2873,PASS
+... 97.5th percentile (pp),-1.54,-1.5397,PASS
+... median divergence,0.367,0.36745,PASS
+Without r/migraine: difference (pp),-0.04,-0.0383,PASS
+Without r/botoxsupportcommunity: difference (pp),-0.25,-0.2482,PASS
+Without r/noburp and r/botoxsupportcommunity: difference (pp),-5.71,-5.7051,PASS
+Lowest divergence leaving out one of the 20 largest,0.273,0.27264,PASS
+Highest divergence leaving out one of the 20 largest,0.408,0.40764,PASS
+Other 17 communities: lowest difference (pp),-3.71,-3.7063,PASS
+Other 17 communities: highest difference (pp),-1.13,-1.1274,PASS
+Lowest divergence across the three periods,0.347,0.34742,PASS
+Highest divergence across the three periods,0.383,0.38349,PASS
+Upper face: divergence,0.297,0.29689,PASS
+Upper face: difference (pp),-22.05,-22.053,PASS
+Jaw: divergence,0.123,0.12299,PASS
+Jaw: difference (pp),-11.61,-11.6127,PASS
+Synonyms merged: divergence,0.367,0.36746,PASS
+Synonyms merged: terms,180.0,180.0,PASS
+Merged and excluded: divergence,0.338,0.33783,PASS
+Merged and excluded: terms,162.0,162.0,PASS
+Merged and excluded: difference (pp),-3.41,-3.4078,PASS
+Comparator: medical self-use submissions,21010.0,21010.0,PASS
+Comparator: cosmetic self-use submissions,12955.0,12955.0,PASS
+Comparator: difference (pp),-1.3,-1.3033,PASS
+Comparator: lower bound (pp),-2.33,-2.3276,PASS
+Comparator: upper bound (pp),-0.28,-0.283,PASS
+Comparator: divergence,0.351,0.35097,PASS
+Comparator: terms,189.0,189.0,PASS
+Corrected medical prevalence (%),30.2,30.197,PASS
+Corrected cosmetic prevalence (%),36.6,36.58,PASS
+Corrected difference (pp),-6.38,-6.3828,PASS
+... bootstrap lower bound (pp),-11.32,-11.3217,PASS
+... bootstrap upper bound (pp),-1.68,-1.6823,PASS
+All unknown assigned medical: difference (pp),0.24,0.2447,PASS
+... lower bound (pp),-0.77,-0.77,PASS
+All unknown assigned cosmetic: difference (pp),-6.26,-6.2602,PASS
+... upper bound (pp),-5.31,-5.311,PASS
+GPT-5.6 Luna self-use sensitivity (%),98.7,98.711,PASS
+GPT-5.6 Luna self-use positive predictive value (%),99.0,98.966,PASS
+DeepSeek self-use sensitivity (%),86.1,86.082,PASS
+DeepSeek self-use positive predictive value (%),93.3,93.296,PASS
+Batch run: self-use accuracy (%),98.3,98.288,PASS
+Batch run: medical labels right,201.0,201.0,PASS
+... of medical labels given,205.0,205.0,PASS
+Batch run: cosmetic labels right,110.0,110.0,PASS
+... of cosmetic labels given,112.0,112.0,PASS
+"DeepSeek, high reasoning: self-use accuracy (%)",93.3,93.305,PASS
+Highest miss rate outside the indication subtype (%),6.8,6.838,PASS
+Indication subtype: empty values judged wrong,28.0,28.0,PASS
+... of empty subtypes,67.0,67.0,PASS
+Extraction set: subreddits,13106.0,13106.0,PASS
+Extraction set: named authors,79545.0,79545.0,PASS
+Extraction set: median body length (characters),637.0,637.0,PASS
+Unlinkable submissions,867.0,867.0,PASS
+... by deleted accounts,848.0,848.0,PASS
+... by AutoModerator,19.0,19.0,PASS
+Unlinkable medical-use submissions,99.0,99.0,PASS
+Unlinkable cosmetic-use submissions,58.0,58.0,PASS
+AutoModerator cosmetic self-use submissions,2.0,2.0,PASS
+1% sample drawn,1187.0,1187.0,PASS
+... blocked by the content filter,19.0,19.0,PASS
+Batch run: flagged and then succeeded on retry,23.0,23.0,PASS
+Batch run: responses failing validation,0.0,0.0,PASS
+Unknown-indication submissions in r/noburp,1775.0,1775.0,PASS
+... with a candidate side effect (%),78.3,78.254,PASS
+Unknown indication outside r/noburp: side effect (%),33.0,32.982,PASS
+Wrong 'unknown' recovered as medical,15.0,15.0,PASS
+... of them in r/noburp,8.0,8.0,PASS
+Wrong 'unknown' recovered as cosmetic,14.0,14.0,PASS
+r/noburp unknowns to medical: difference (pp),0.78,0.7777,PASS
+... lower bound (pp),-0.27,-0.267,PASS
+... upper bound (pp),1.82,1.8184,PASS
+... Pearson P,0.14,0.1443,PASS
+Verified reallocation: median difference (pp),-1.14,-1.1375,PASS
+... 2.5th percentile (pp),-1.88,-1.8786,PASS
+... 97.5th percentile (pp),-0.37,-0.3651,PASS
+r/noburp medical use: side effect without eructation (%),68.3,68.315,PASS
+Cleaned vocabulary: submissions with a side effect,13165.0,13165.0,PASS
+Cleaned vocabulary: submissions with more than one,7276.0,7276.0,PASS
+Cleaned vocabulary: distressed (%),84.1,84.079,PASS
+Cleaned vocabulary: accepting (%),15.2,15.207,PASS
+Cleaned vocabulary: dismissive (%),0.7,0.691,PASS
+Cleaned vocabulary: medical mean distinct terms,2.33,2.3304,PASS
+Cleaned vocabulary: cosmetic mean distinct terms,2.08,2.0794,PASS
+Cleaned vocabulary: Mann-Whitney P (x 1e13),1.3,1.263,PASS
+Cleaned vocabulary: rank-biserial correlation,0.08,0.07982,PASS
+Cleaned medical denominator,6302.0,6302.0,PASS
+Cleaned cosmetic denominator,4284.0,4284.0,PASS
+Medical rate factor,1.09,1.0865,PASS
+Cosmetic rate factor,1.06,1.0593,PASS
+2015-2019: difference (pp),-0.87,-0.87,PASS
+2020-2022: difference (pp),-2.82,-2.8161,PASS
+2023-2025: difference (pp),-2.37,-2.3663,PASS
+chronic migraine vs forehead or glabellar lines: medical side effect (%),21.6,21.628,PASS
+chronic migraine vs forehead or glabellar lines: cosmetic side effect (%),43.7,43.68,PASS
+chronic migraine vs forehead or glabellar lines: medical n,6857.0,6857.0,PASS
+chronic migraine vs forehead or glabellar lines: cosmetic n,3956.0,3956.0,PASS
+temporomandibular disorder vs masseter or jawline: medical side effect (%),32.3,32.267,PASS
+temporomandibular disorder vs masseter or jawline: cosmetic side effect (%),43.9,43.879,PASS
+temporomandibular disorder vs masseter or jawline: medical n,3344.0,3344.0,PASS
+temporomandibular disorder vs masseter or jawline: cosmetic n,1593.0,1593.0,PASS
+Divergence: bootstrap mean,0.382,0.3823,PASS
+"Divergence: basic interval, lower",0.342,0.34194,PASS
+"Divergence: basic interval, upper",0.381,0.38138,PASS
+Corrected medical prevalence: lowest replicate (%),26.3,26.321,PASS
+Corrected medical prevalence: highest replicate (%),34.4,34.374,PASS
+Corrected cosmetic prevalence: lowest replicate (%),30.3,30.334,PASS
+Corrected cosmetic prevalence: highest replicate (%),44.6,44.609,PASS
+"Table 3, abdominal distension: difference",3.64,3.6433,PASS
+... clustered lower bound,3.13,3.1314,PASS
+... clustered upper bound,4.19,4.1877,PASS
+"Table 3, sore throat: difference",3.53,3.5334,PASS
+... clustered lower bound,3.08,3.0786,PASS
+... clustered upper bound,4.0,3.9963,PASS
+Re-labelled false positives judged to describe a side effect,0.0,0.0,PASS
+"Medical positive predictive value, post level (%)",90.4,90.411,PASS
+"Corrected difference, post level (pp)",-6.38,-6.3828,PASS
+... bootstrap lower bound (pp),-11.32,-11.3217,PASS
+... bootstrap upper bound (pp),-1.68,-1.6823,PASS
+Verified reallocation after re-reading: median (pp),-1.15,-1.1475,PASS
+"Post-level presence, medical: sensitivity (%)",98.5,98.507,PASS
+... lower bound (%),92.0,92.018,PASS
+... upper bound (%),99.7,99.736,PASS
+"Post-level presence, medical: positive predictive value (%)",90.4,90.411,PASS
+... lower bound (%),81.5,81.504,PASS
+... upper bound (%),95.3,95.277,PASS
+"Post-level presence, cosmetic: sensitivity (%)",92.7,92.683,PASS
+... lower bound (%),80.6,80.573,PASS
+... upper bound (%),97.5,97.48,PASS
+"Post-level presence, cosmetic: positive predictive value (%)",95.0,95.0,PASS
+... lower bound (%),83.5,83.496,PASS
+... upper bound (%),98.6,98.618,PASS
+Post-level corrected medical prevalence: lowest replicate (%),26.3,26.321,PASS
+Post-level corrected medical prevalence: highest replicate (%),34.4,34.374,PASS
+Post-level corrected cosmetic prevalence: lowest replicate (%),30.3,30.334,PASS
+Post-level corrected cosmetic prevalence: highest replicate (%),44.6,44.609,PASS
+Batch run: same candidate-term set as the verified run,237.0,237.0,PASS
+... of verified medical and cosmetic self-use submissions,319.0,319.0,PASS
+"Full corpus, DeepSeek vs batch: paired records",118747.0,118747.0,PASS
+... self-use kappa,0.839,0.83917,PASS
+... side-effect presence kappa,0.817,0.81691,PASS
+... exact candidate-term set,0.638,0.63751,PASS
+... mean Jaccard,0.689,0.68884,PASS
+... full-record agreement,0.383,0.38326,PASS
